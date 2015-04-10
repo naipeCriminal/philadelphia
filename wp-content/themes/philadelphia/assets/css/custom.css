@@ -1,0 +1,23 @@
+.container{
+	width: 100%;
+}
+.navbar-collapse{
+/*	padding-right:0px;	
+	padding-left:0px;*/
+}
+
+.checkbox{
+	width: 100%;
+
+}
+#container-header{
+	padding: 0;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+
+}
