@@ -32,16 +32,17 @@ $cats[] = $term->term_id;
       $types = get_the_category( get_the_ID(), $FPF_categories); 
       if ( is_user_logged_in() || (!is_user_logged_in() && !$premium) ){
       ?>
-      <div class="col-xs-12 col-md-4" id="item" data-id="id-<?php echo $count; ?>" data-type="<?php foreach ($types as $type) { echo $type->slug. ' '; }?>">
-        <div class="view">
-          <div class="thumbnail" style="width: 100%;height: 100%;background-size: cover;background-position: center center !important;background: url(<?php echo($imgDestacada); ?>)">
-            <?php #the_post_thumbnail(); ?>
-            <div class="titulote">
-              <p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php echo get_the_title(); ?></a></p>
-            </div> 
-          </div>
-        </div>   
-      </div>
+
+<div class="col-xs-12 col-md-4" id="item"  style="background: url(<?php echo($imgDestacada); ?>);height: 350px;background-size: cover;background-position: center center !important;" data-id="id-<?php echo $count; ?>" data-type="<?php foreach ($types as $type) { echo $type->slug. ' '; }?>">
+  <div class="pleca ">
+    <div class="descripcion">
+      <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php echo get_the_title(); ?></a></h1>
+      <h2></h2>
+    </div>
+  </div>
+</div>
+
+
       <?php } ?>
       <?php $count++; // Increase the count by 1 ?>   
       <?php endwhile; ?>  

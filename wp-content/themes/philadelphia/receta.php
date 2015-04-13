@@ -2,12 +2,13 @@
 /*
 Template Name Posts: receta
 */
+//no borrar o de aca arriba
 ?>
 <?php get_header(); ?> 
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- <div class="container">
+ <div class="container templateReceta">
       <div class="row receta">
         <div class="col-md-3"><button>dame click</button></div>
         <div class="col-md-6 bemio">tips  <span class="bjack">& recetas y Tips</span></div>
@@ -20,19 +21,19 @@ Template Name Posts: receta
           </div>          
         </div>
         <div class="col-xs-12 col-md-2" style="padding:0px;">
-          <div class="col-xs-3 col-md-12 caracteristica" style="background:url(assets/img/recetas-tiempo.jpg) no-repeat">
+          <div class="col-xs-3 col-md-12 caracteristica" style="background:url('wp-content/themes/philadelphia/assets/img/recetas-tiempo.jpg') no-repeat;background-size: cover; background-position: center center;">
             <h4><?php echo( types_render_field("tiempo-de-preparacion",array('row'=>true))); ?></h4>
             
           </div>
-          <div class="col-xs-3 col-md-12 caracteristica" style="background:url(assets/img/recetas-tiempo-dehorneado.jpg) no-repeat">
+          <div class="col-xs-3 col-md-12 caracteristica" style="background:url('wp-content/themes/philadelphia/assets/img/recetas-tiempo-dehorneado.jpg') no-repeat;background-size: cover; background-position: center center;">
             <h4><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?> </h4>
             
           </div>
-          <div class="col-xs-3 col-md-12 caracteristica" style="background:url(assets/img/recetas-rinde.jpg) no-repeat">
+          <div class="col-xs-3 col-md-12 caracteristica" style="background:url('wp-content/themes/philadelphia/assets/img/recetas-rinde.jpg') no-repeat;background-size: cover; background-position: center center;">
             <h4><?php echo( types_render_field("porciones",array('row'=>true))); ?></h4>
             
           </div>
-          <div class="col-xs-3 col-md-12 caracteristica" style="background:url(assets/img/recetas-categoria.jpg) no-repeat">
+          <div class="col-xs-3 col-md-12 caracteristica" style="background:url('wp-content/themes/philadelphia/assets/img/recetas-categoria.jpg') no-repeat;background-size: cover; background-position: center center;">
             <h4><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?></h4>
             
           </div>
