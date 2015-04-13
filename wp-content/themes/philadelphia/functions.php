@@ -137,12 +137,12 @@ function cr_display_form($fields = array(), $errors = null) {
 
     </div>
     <div class="col-md-8" style="background:url('wp-content/themes/philadelphia/assets/img/');background-size: cover; background-position: center center;"></div>
-    <div class="col-md-4"></div>
+    <div class="col-md-4" style="background:url('wp-content/themes/philadelphia/assets/img/');background-size: cover; background-position: center center;"></div>
     <div class="col-md-8">
     <form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
       <div class="col-md-12">
         <div class="col-md-6">
-            <h1>DATOS D ETU CUENTA</h1>
+            <h1 class="bemio" style="color: #1a477e;text-align: center;font-size: 35px;">DATOS D ETU CUENTA</h1>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="USUARIO*"  name="user_login" value="<?php echo (isset($fields['user_login']) ? $fields['user_login'] : '') ?>">
             </div>
@@ -152,7 +152,7 @@ function cr_display_form($fields = array(), $errors = null) {
             <div class="form-group">
                 <input type="password" class="form-control" placeholder="CONTRASEÑA*" name="user_pass">
             </div>
-            <h1>CUÉNTANOS DE TI</h1>
+            <h1 class="bemio" style="color: #1a477e;text-align: center;font-size: 35px;">CUÉNTANOS DE TI</h1>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="NOMBRE" name="nombre" value="<?php echo (isset($fields['nombre']) ? $fields['nombre'] : '') ?>">
             </div>
@@ -173,7 +173,7 @@ function cr_display_form($fields = array(), $errors = null) {
             </div>            
         </div>
         <div class="col-md-6">
-            <h1>CUÉNTANOS DE <br>TU EMPRESA</h1>
+            <h1 class="bemio" style="color: #1a477e;text-align: center;font-size: 35px;">CUÉNTANOS DE <br>TU EMPRESA</h1>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="TIPO DE EMPRESA" name="tipoempresa" value="<?php echo (isset($fields['tipoempresa']) ? $fields['tipoempresa'] : '') ?>">
             </div>
