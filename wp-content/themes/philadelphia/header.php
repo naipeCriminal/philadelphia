@@ -12,7 +12,7 @@
 	<?php wp_head(); ?>
 </head>
 <body> 
-  <?php if ( is_user_logged_in() ) {?><a href="<?php echo wp_logout_url(); ?>">Logout</a> <?php } ?> 
+  <?php if ( is_user_logged_in() ) {?><a class="logout" href="<?php echo wp_logout_url(); ?>">Logout</a> <?php } ?> 
   
   <div class="container" id="container-header">
           <!-- Static navbar -->
