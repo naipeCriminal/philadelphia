@@ -1,9 +1,9 @@
-<div class="container">
+<div class="safe-container">
 	<div class="row text-center">
 		<h1 class="uppercase bemio blue-default">Centro Gastronómico Mondeléz</h1>
 	</div>
 </div>
-<div class="container" id="container-success-cases">
+<div class="safe-container" id="container-success-cases">
 	<div class="row success-case">
 		<div class="col-md-6 text-center success-case-content">
 			<h1>
