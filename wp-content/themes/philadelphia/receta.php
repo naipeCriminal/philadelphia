@@ -14,7 +14,7 @@ Template Name Posts: receta
       </a>
     </div>
     <div class="col-md-6 text-center">
-      <h1 class="bemio">Recetas <span class="bjack">y Tips</span></h1></div>
+      <h1 class="bemio" id="title-header-recipes-tips">Recetas <span class="bjack">y Tips</span></h1></div>
       <div class="col-md-3">
         <button class="btn form-control btn-info text-right">Regresar a Resultadosd </button>
       </div>

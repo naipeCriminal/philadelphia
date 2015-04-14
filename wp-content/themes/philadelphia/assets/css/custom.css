@@ -14,7 +14,11 @@
 #container-header{
 	padding: 0;
 }
-
+form{
+	float: left;
+	background: rgb(0, 74, 128);
+	padding-top: 15px;
+}
 .navbar{
 	margin-bottom: 0px;
 }
@@ -45,4 +49,22 @@
 .btn-default:hover{
 	color: #fff;
 	background-color: #064E94;
+}
+.form-control{
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	margin-bottom: 5px;
+	background-image: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select.form-control::-ms-expand {
+    display: none;
+}
+.select-arrow {
+  background-image: url(../img/arrow-select.png);
+  background-position: 99% center;
+  background-repeat: no-repeat;
 }
