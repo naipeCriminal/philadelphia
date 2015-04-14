@@ -7,6 +7,8 @@ if ( is_front_page()) {
   include_once("pages/innovation_center.php");
 }else if(is_page(469)){
   include_once("pages/noticias.php");
+}else if(is_page(568)){
+  include_once("pages/qphilly.php");
 }else if(is_page(381)){
   include_once("pages/recetas.php");
 }else{
