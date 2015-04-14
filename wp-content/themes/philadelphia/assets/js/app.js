@@ -1,29 +1,5 @@
 var App = (function(){
 
-	
-
-	function initialize() {
-
-		/* position Amsterdam */
-		var latlng = new google.maps.LatLng(52.3731, 4.8922);
-
-		var mapOptions = {
-		center: latlng,
-		scrollWheel: false,
-		zoom: 13
-		};
-
-		var marker = new google.maps.Marker({
-		position: latlng,
-		url: '/',
-		animation: google.maps.Animation.DROP
-		});
-
-		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-		marker.setMap(map);
-
-	};
-
 	function animaMenu(){
 		$(".checkbox span").textillate({in:{effect:'rollIn'}});
 	}
@@ -40,8 +16,32 @@ var App = (function(){
 		    }
 		});
 	}
+	function guardar(){
+		$.ajax({
+			url: 'wp-content/themes/philadelphia/assets/php/guardar.php',
+			type: 'POST',
+			data: $("#registro").serialize(),
+		})
+		.done(function(msj) {
+
+			// alert(msj);
 
 
+
+			// if(msj=="Registro exitoso") {
+			// 	$(".suscribete").fadeOut('fast');
+			// 	$("div .ok").html("<span class='white'><p>¡Listo! </p><p>Te enviamos un correo de confirmación.</p><p>Gracias por ser parte del mundo Splenda®</p><span>");
+			// }else{
+				$(".respuesta").html(msj);
+			// }
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});	
+	}
 
 	//Métodos públicos
 	return{
@@ -50,6 +50,11 @@ var App = (function(){
 			animaMenu();
 			animaPost();
 
+			$(".mandarCorreo").on("click",function(e){
+				e.preventDefault();
+		        guardar();
+		        // alert("bien asesino")
+		    });
 
 		}
 	}
