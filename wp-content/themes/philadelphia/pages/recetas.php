@@ -80,7 +80,7 @@ $cats[] = $term->term_id;
           <div class="recipe-title">
             <div class="table">
               <div class="cell-center">
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php echo get_the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>&type=<?php foreach ($types as $type) { echo $type->slug. ' '; }?>" title="<?php the_title_attribute(); ?>" ><?php echo get_the_title(); ?></a>
               </div>
             </div>
           </div>

@@ -1,12 +1,20 @@
 .container{
 	width: 100%;
 }
+.safe-container{
+	width: 1024px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
 .checkbox{
 	width: 100%;
 }
 #container-header{
 	padding: 0;
 }
+
 .navbar{
 	margin-bottom: 0px;
 }
@@ -15,6 +23,26 @@
 	padding-right: 0px;
 }
 .navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+	background-color: transparent;
+	border-color: transparent;
+}
+.reset-padding{
+	padding: 0;
+}
+.btn{
+	border-radius: 0;
+	color: white;
+	font-family: 'titillium_webbold';
+	text-transform: uppercase;
+}
+.btn-bjack{
+	font-size: 22px;
+	line-height: 3px;
+}
+.btn-default{ background-color: #014282; }
+.btn-facebook{ background-color: #537abb; }
+.btn-info{ background-color: #0097fe; }
+.btn-default:hover{
+	color: #fff;
+	background-color: #064E94;
 }
