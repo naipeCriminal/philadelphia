@@ -6,13 +6,12 @@
 					<option value="2015">MONDELEZ EN EL MUNDO</option>
 				</select> 
 			</li>
-			<li>kgjfasgkjfsa </li>
-			<li>kgjfasgkjfsa </li>
-			<li>kgjfasgkjfsa </li>
-			<li>kgjfasgkjfsa </li>
-			<li>kgjfasgkjfsa </li>
+			<li><a href="#">Contáctanos</a></li>
+			<li><a href="#">Preguntas frecuentes</a></li>
+			<li><a href="#">Políticas de privacidad y términos de uso.</a></li>
+			<li><a href="#">Aviso Legal</a></li>
+			<li>Derechos Reservados 2014 Mondeléz México, S de R.L.de C.V.</li>
 		</ul>
-
 	</div>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery-1.9.1.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.js" ></script>
