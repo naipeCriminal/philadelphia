@@ -147,6 +147,9 @@
 body, html{
   font-family: 'titillium_regular';
 }
+.blue-default{
+  color: #194780;
+}
   /*checkbox*/
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
@@ -446,6 +449,32 @@ width: 100%;
 .ubicacion .chef{
 	/*background: url(../img/diseno/queEs/ubicacionChefs.jpg);*/
 }
+.success-case{
+  position: relative;
+}
+.success-case-body > h1,
+.success-case-body > h3,
+.success-case-body > p,
+.success-case{
+  color: white;
+}
+.success-case-image {
+  height: 100%;
+  float: left;
+  position: absolute;
+  right: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.success-case-image > img{
+  opacity: 0;
+}
+.success-case:nth-child(odd) { background-color: #004a80; }
+.success-case:nth-child(even) { background-color: #0098ff; }
+.success-case:nth-child(even) .success-case-image{ left: 0; }
+.success-case:nth-child(even) .success-case-content{ left: 50%; }
 .ubicacion .col-md-3{
 	height: 400px;
 	display: table;
@@ -971,6 +1000,11 @@ code {
 }
 .templateReceta{
   margin-top: 30px;
+}
+#title-header-recipes-tips{
+  color: #1a4780;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .ourHolder #item{
   padding: 0px;
