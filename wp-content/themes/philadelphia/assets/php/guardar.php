@@ -1,30 +1,34 @@
 <?php
 require_once("config.php");
 require_once("mail.php");
+$emailValido=0;
+// print_r($_POST);
+// die;
 
-if(isset($_POST['nombres'])){ $nombres=$_POST['nombres'];} else{ $nombres=0;}
-if(isset($_POST['email'])){ $email=$_POST['email'];} else{ $email=0;}
-if(isset($_POST['telefono'])){ $telefono=$_POST['telefono'];} else{ $telefono=0;}
-if(isset($_POST['estado'])){ $estado=$_POST['estado'];} else{ $estado=0;}
-if(isset($_POST['nombreEmpresa'])){ $nombreEmpresa=$_POST['nombreEmpresa'];} else{ $nombreEmpresa=0;}
-if(isset($_POST['rollEmpresa'])){ $rollEmpresa=$_POST['rollEmpresa'];} else{ $rollEmpresa=0;}
-if(isset($_POST['asunto'])){ $asunto=$_POST['asunto'];} else{ $asunto=0;}
-if(isset($_POST['mensaje'])){ $mensaje=$_POST['mensaje'];} else{ $mensaje=0;}
+if(isset($_POST['nombres'])){ $nombres=$_POST['nombres'];} else{ $nombres="";}
+if(isset($_POST['email'])){ $email=$_POST['email'];} else{ $email="";}
+if(isset($_POST['telefono'])){ $telefono=$_POST['telefono'];} else{ $telefono="";}
+if(isset($_POST['estado'])){ $estado=$_POST['estado'];} else{ $estado="";}
+if(isset($_POST['nombreEmpresa'])){ $nombreEmpresa=$_POST['nombreEmpresa'];} else{ $nombreEmpresa="";}
+if(isset($_POST['rollEmpresa'])){ $rollEmpresa=$_POST['rollEmpresa'];} else{ $rollEmpresa="";}
+if(isset($_POST['asunto'])){ $asunto=$_POST['asunto'];} else{ $asunto="";}
+if(isset($_POST['mensaje'])){ $mensaje=$_POST['mensaje'];} else{ $mensaje="";}
+
 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     $emailValido=1;
 }
 
-if($nombres==0 or $email ==0 or $emailValido==0 or $telefono==0 or $estado ==0 or $nombreEmpresa==0 or $rollEmpresa==0 or $asunto==0 or $mensaje==0 ){
-	// echo ("email: $emailValido, nombre: $nombre, dia: $dia ,mes:$mes, año:$anio, ciudad:$ciudad, email:$email <br>");
-	echo "<span style='color:#E91C1C;'>Falta llenar algunos campos";
-	if($nombres=="")echo '<br> Nombre*';
-	if($email=="" or $email==0)echo '<br> correo electrónico invalido';
-	if($telefono=="0")echo '<br> telefono';
-	if($estado=="0")echo '<br> estado';
-	if($nombreEmpresa=="0")echo '<br> nombreEmpresa';
-	if($rollEmpresa=="")echo '<br> rollEmpresa';
-	if($asunto=="")echo '<br> asunto';
-	if($mensaje=="")echo '<br> mensaje';
+if($nombres=="" or $email==""  or $emailValido==0 or $telefono=="" or $estado=="" or $nombreEmpresa=="" or $rollEmpresa=="" or $asunto=="" or $mensaje=="" ){
+	echo " <span style='color:#E91C1C;'>Falta llenar algunos campos <br>";
+	if($nombres=="")echo 'Nombre* <br>';
+	if($email=="" ) echo 'correo electrónico* <br>';
+	if($emailValido==0) echo 'correo electrónico invalido <br>';
+	if($telefono=="")echo 'telefono<br>';
+	if($estado=="")echo 'estado<br>';
+	if($nombreEmpresa=="")echo 'nombreEmpresa<br>';
+	if($rollEmpresa=="")echo 'rollEmpresa<br>';
+	if($asunto=="")echo 'asunto<br>';
+	if($mensaje=="")echo 'mensaje<br>';
 	echo "</span>";
 }else{
 	//instancio un objeto de la clase PHPMailer

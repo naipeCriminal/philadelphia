@@ -15,11 +15,8 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint impedit error atque voluptatibus accusamus, nam ex quas aperiam aut nulla cupiditate necessitatibus porro nihil vel molestias velit facilis id autem.</p>
           <h1 class="bjack" style="font-size:24px">¡Ha tu negocio más versátil! <br>¡Personaliza tus recetas con Philadelphia!</h1>    
         </div>
-        <div class="col-xs-12 col-md-6 seccion">
+        <div class="col-xs-12 col-md-6 seccion" style="padding:0px;">
                   <div class="col-md-8" id="map-canvas">
-<div class="Flexible-container">
-    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ch/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Bern&amp;aq=&amp;sll=46.813187,8.22421&amp;sspn=3.379772,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Bern&amp;t=m&amp;z=12&amp;ll=46.947922,7.444608&amp;output=embed&amp;iwloc=near"></iframe>
-</div>
         </div>     
         </div>
         <div class="col-xs-12 col-md-4 seccion sinPadding" style="background:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-ubicacion.jpg');background-size: cover; background-position: center center;">

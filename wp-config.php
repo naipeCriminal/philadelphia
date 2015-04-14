@@ -52,7 +52,9 @@ define('LOGGED_IN_SALT',   'QnH[3NoH9-?;0:R;|8g;H.fNYJtea|`GHk|w|rkx~_W=r+Y5<>F7
 define('NONCE_SALT',       'T:P`7g0LK5j]-B))Yl/<Z<KS-#2(<@#h kei[DSWR&tp,Q__EU``Seyx+%w3YtpM');
 
 /**#@-*/
-
+define( ‘WP_AUTO_UPDATE_CORE’, false );
+// add_filter( 'auto_update_translation', '__return_false' );
+ 
 /**
  * WordPress Database Table prefix.
  *
