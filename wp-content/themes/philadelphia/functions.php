@@ -17,6 +17,7 @@ add_filter( 'show_admin_bar', '__return_false' );
 
 function my_cpt_post_types( $post_types ) {
     $post_types[] = 'receta';
+    $post_types[] = 'tip-para-subir';
     return $post_types;
 }
 add_filter( 'cpt_post_types', 'my_cpt_post_types' );
