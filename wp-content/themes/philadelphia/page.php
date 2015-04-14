@@ -15,6 +15,14 @@ if ( is_front_page()) {
   include_once("pages/queEs.php");
 }else if(is_page(304)){
   include_once("pages/ubicacion.php");
+}else if(is_page(317)){
+  include_once("pages/casosExito.php");
+}else if(is_page(390)){
+  include_once("pages/contacto.php");
+}else if(is_page(293)){
+  include_once("pages/c_gastronomico.php");
+}else if(is_page(310)){
+  include_once("pages/producto.php");
 }else{
 	//Wordpress default route
 	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

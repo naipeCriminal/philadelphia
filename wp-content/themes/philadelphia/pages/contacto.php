@@ -17,7 +17,7 @@
           <input type="text" class="form-control" name="nombres" placeholder="NOMBRES Y APELLIDOS">
         </div>        
         <div class="col-md-12" style="padding:0px">
-          <input type="email" class="form-control" name="email" placeholder="EMAIL">
+          <input type="text" class="form-control" name="email" placeholder="EMAIL">
         </div>        
         <div class="col-md-12" style="padding:0px">
           <input type="text" class="form-control" name="telefono" placeholder="TELEFONO">
