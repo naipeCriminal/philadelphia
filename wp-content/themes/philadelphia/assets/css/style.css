@@ -991,3 +991,16 @@ code {
 .tipRecetaa{
     width: 1170px;
 }
+.modal-body h1,.modal-body h2,.modal-body h3,.modal-body p{
+  color: #004a80;
+}
+.modal-body h1{
+  text-align: center;
+}
+.modal-body h2{
+  text-align: left;
+
+}
+.modal-content{
+  background: url('../img/centro_gastronomico_chefs-back.jpg');
+}

@@ -10,7 +10,6 @@ if(isset($_POST['nombreEmpresa'])){ $nombreEmpresa=$_POST['nombreEmpresa'];} els
 if(isset($_POST['rollEmpresa'])){ $rollEmpresa=$_POST['rollEmpresa'];} else{ $rollEmpresa=0;}
 if(isset($_POST['asunto'])){ $asunto=$_POST['asunto'];} else{ $asunto=0;}
 if(isset($_POST['mensaje'])){ $mensaje=$_POST['mensaje'];} else{ $mensaje=0;}
-
 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     $emailValido=1;
 }
