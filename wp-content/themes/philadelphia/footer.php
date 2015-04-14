@@ -16,6 +16,7 @@
 	</div>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery-1.9.1.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.js" ></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.fittext.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.lettering.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.textillate.js"></script>

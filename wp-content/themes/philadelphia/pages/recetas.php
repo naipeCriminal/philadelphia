@@ -12,40 +12,40 @@ $cats[] = $term->term_id;
 <!-- esto se puede borrar -->
 <div class="container" id="filter-recipes">
   <div class="row">
-  <div class="col-md-offset-2 col-md-4">
-    <h1 class="bemio">Personaliza los resultados eligiendo que quieres ver</h1>
-  </div>
-  <!-- <div class="col-md-2">
-    <div class="checkbox" data-filtro="all">
-      <span>TODO</span>
-      <input type="checkbox" value="None" name="check" checked />
-      <label for="P"></label>
+    <div class="col-md-offset-2 col-md-4">
+      <h1 class="bemio">Personaliza los resultados eligiendo que quieres ver</h1>
     </div>
-  </div> -->
-  <div class="col-md-2">
-    <div class="checkbox" data-filtro="panaderia">
-      <span>PANADERÍA</span>
-      <input type="checkbox" value="None" name="check" checked />
-      <label for="P"></label>
+    <!-- <div class="col-md-2">
+      <div class="checkbox" data-filtro="all">
+        <span>TODO</span>
+        <input type="checkbox" value="None" name="check" checked />
+        <label for="P"></label>
+      </div>
+    </div> -->
+    <div class="col-md-2">
+      <div class="checkbox" data-filtro="panaderia">
+        <span>PANADERÍA</span>
+        <input type="checkbox" value="None" name="check" checked />
+        <label for="P"></label>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="checkbox" data-filtro="hoteles-y-restaurantes">
+        <span>HOTELES </span>
+        <br>
+        <span>Y RESTAURANTES</span>
+        <input type="checkbox" value="None" id="HOTELES-Y-RESTAURANTES" name="check" checked />
+        <label for="p"></label>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="checkbox" data-filtro="pasteleria-y-cafeteria">
+        <span class="pasteleria-y-cafeteria">CAFÉS Y PASTELERÍA</span>
+        <input type="checkbox" value="None"  name="check" checked />
+        <label for="p"></label>
+      </div>
     </div>
   </div>
-  <div class="col-md-2">
-    <div class="checkbox" data-filtro="hoteles-y-restaurantes">
-      <span>HOTELES </span>
-      <br>
-      <span>Y RESTAURANTES</span>
-      <input type="checkbox" value="None" id="HOTELES-Y-RESTAURANTES" name="check" checked />
-      <label for="p"></label>
-    </div>
-  </div>
-  <div class="col-md-2">
-    <div class="checkbox" data-filtro="pasteleria-y-cafeteria">
-      <span class="pasteleria-y-cafeteria">CAFÉS Y PASTELERÍA</span>
-      <input type="checkbox" value="None"  name="check" checked />
-      <label for="p"></label>
-    </div>
-  </div>
-</div>
 </div>
 <div class="container">
   <div class="row">

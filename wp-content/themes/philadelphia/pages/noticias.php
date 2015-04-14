@@ -1,13 +1,13 @@
 <div class="container ">
   <div class="row pic">
-    <h1 class="bemio">NOTICIAS</h1>
+    <h1 class="bemio" style="color: #1a477e;text-align: center;font-size: 35px;">NOTICIAS</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium reiciendis minus quaerat veniam alias rem consequatur repellat dolore odio accusamus, nisi officiis, maxime enim, hic expedita. Dolorum quos nemo veritatis.</p>
   <?php
   $args = array('showposts'=>-1,  'post_type'=>'noticia');
   $query = new WP_Query($args);
    if ( have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-
-    <div class="col-xs-12 col-md-4 seccion" style="background:url(<?php echo bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-karlaferrer.jpg)">
+<?php global $post;$thumbID = get_post_thumbnail_id( $post->ID );$imgDestacada = wp_get_attachment_url( $thumbID );?> 
+    <div class="col-xs-12 col-md-4 seccion" style="background:url(<?php echo $imgDestacada; ?>);background-size: cover; background-position: center center;">
       <div class="pleca">
         <div class="descripcionChef" style="background:#0097fe;">
           <h1>NOTICIA </h1>
@@ -25,3 +25,12 @@
   ?>  
   </div>
 </div>
+
+
+
+
+
+
+
+
+

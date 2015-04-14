@@ -110,7 +110,7 @@ width: 100%;
 	background-position: center center;
 }
 .container{
-	/*height: 100%;*/
+	width: 100%;
 }
 .entradaBlog .titulo{
 	display: table-cell;
@@ -714,6 +714,34 @@ code {
 }
 /*/////////*/
 .pic{}
+.pic .logoDePost{
+  position: absolute;
+  top:5px;
+  right: 5px;
+  background: #000;
+  width: 100px;
+  height: 100px;
+}
+.pic .ingrediente-hot{
+  background: url('../img/cat/sello_el_ingredienta_hot.png');
+}
+.pic .cocina-salud{
+  background: url('../img/cat/sello_cocina_salud.png');
+}
+.pic .sweet-report{
+  background: url('../img/cat/sello_sweet_report.png');
+}
+
+.pic .cobertura-de-cursos{
+  background: url('../img/cat/sello_philly_trends.png');
+}
+.pic .philly-hunter{
+  background: url('../img/cat/sello_philly_lab.png');
+}
+
+.pic .cobertura-de-cursos{
+  background: url('../img/cat/sello_newandtasy.png');
+}
 
 .pic .seccion .pleca{
   /*background: blue;*/
@@ -732,6 +760,8 @@ code {
   padding: 10px;
   /*background: gray;*/
   color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .pic h1{
   text-align: center;
@@ -750,10 +780,14 @@ code {
 /*/////////////////*/
 .chefs .seccion .pleca{
 	/*background: blue;*/
-	vertical-align: bottom;
+	/*vertical-align: bottom;*/
 	height: 100px;
 	text-align: center;
 	display:table-cell;
+  bottom: 30px;
+  position: absolute;
+  width: 100%;
+
 }
 .chefs .seccion{
 	height: 375px;
@@ -894,4 +928,24 @@ code {
   bottom: 0;
   background: white;
   height: 60px;
+}
+.templateReceta{
+  width: 1170px;
+}
+.ourHolder #item{
+  padding: 0px;
+}
+.ourHolder #item .pleca{
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  text-align: center;  
+}
+.hiTitulo{
+  color: #1a477e;text-align: center;font-size: 35px;
+}
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 60px; overflow: hidden;
 }
