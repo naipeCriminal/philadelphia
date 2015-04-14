@@ -13,6 +13,8 @@ if ( is_front_page()) {
   include_once("pages/recetas.php");
 }else if(is_page(301)){
   include_once("pages/queEs.php");
+}else if(is_page(304)){
+  include_once("pages/ubicacion.php");
 }else{
 	//Wordpress default route
 	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

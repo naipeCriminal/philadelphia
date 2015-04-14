@@ -24,16 +24,7 @@ var App = (function(){
 		})
 		.done(function(msj) {
 
-			// alert(msj);
-
-
-
-			// if(msj=="Registro exitoso") {
-			// 	$(".suscribete").fadeOut('fast');
-			// 	$("div .ok").html("<span class='white'><p>¡Listo! </p><p>Te enviamos un correo de confirmación.</p><p>Gracias por ser parte del mundo Splenda®</p><span>");
-			// }else{
-				$(".respuesta").html(msj);
-			// }
+			$(".respuesta").html(msj);
 		})
 		.fail(function() {
 			console.log("error");
@@ -42,6 +33,43 @@ var App = (function(){
 			console.log("complete");
 		});	
 	}
+
+
+function initializeMaps () {
+  var mapOptions = {
+    center: new google.maps.LatLng(19.379111,-99.141639),
+    zoom: 8,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  
+  
+  
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  
+  var markers = [
+        ['Centro Gastronómico Mondelez, Distrito Federal', 19.379111,-99.141639]
+        // ['Palace of Westminster, London', 51.499633,-0.124755]
+  ];
+  
+  
+  // markers & place each one on the map  
+  for( i = 0; i < markers.length; i++ ) {
+    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+    bounds.extend(position);
+    marker = new google.maps.Marker({
+      position: position,
+      map: map,
+      title: markers[i][0]
+    });
+
+    // Automatically center the map fitting all markers on the screen
+    map.fitBounds(bounds);
+  }
+  
+}
+
+google.maps.event.addDomListener(window, 'load', initializeMaps);
+
 
 	//Métodos públicos
 	return{

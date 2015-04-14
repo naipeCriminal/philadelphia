@@ -1004,23 +1004,12 @@ code {
 .modal-content{
   background: url('../img/centro_gastronomico_chefs-back.jpg');
 }
-/*////////google map//////////*/
-/* Flexible iFrame */
+/*mapa*/
+/* all map containers must be full height */
+  .map { height: 100% }
 
-.Flexible-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.Flexible-container iframe,   
-.Flexible-container object,  
-.Flexible-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+#map-canvas {
+  width:100%;
     height: 100%;
+  height:calc(100% - 0px);
 }
