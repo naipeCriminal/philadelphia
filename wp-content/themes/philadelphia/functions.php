@@ -7,7 +7,8 @@ if ( function_exists( 'add_theme_support' ) )
 <?php 
 // mostrar barra administracion|
 add_filter( 'show_admin_bar', '__return_false' );
-
+//personalizar logout
+add_action('wp_logout',create_function('','wp_redirect(home_url());exit();'));
 /**
  * Hooks the WP cpt_post_types filter 
  *
