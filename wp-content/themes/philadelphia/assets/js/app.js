@@ -8,13 +8,13 @@ var App = (function(){
 	}
 
 	function iniciaEventos(){
-		$('.titulote p').on({mouseenter: function(){
-		        $(this).animate({fontSize: 20});
-		    },
-		    mouseleave: function(){
-		        $(this).animate({fontSize: 15});
-		    }
-		});
+		// $('.titulote p').on({mouseenter: function(){
+		//         $(this).animate({fontSize: 20});
+		//     },
+		//     mouseleave: function(){
+		//         $(this).animate({fontSize: 15});
+		//     }
+		// });
 
 		$(document).on("click", ".share-facebook", function(event) {
             event.preventDefault();

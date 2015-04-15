@@ -122,12 +122,12 @@ if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
         </form>
       </div>
       <div class="col-md-8 reset-padding">
-        <img src="wp-content/themes/philadelphia/assets/img/food-service-login-top.jpg" alt="" width="100%">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-login-top.jpg" alt="" width="100%">
       </div>
     </div>
     <div id="container-registro">
       <div class="col-md-4 reset-padding">
-        <img src="wp-content/themes/philadelphia/assets/img/food-service-login-bottom.jpg" alt="" width="100%">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-login-bottom.jpg" alt="" width="100%">
       </div>
       <div class="col-md-8 text-center">
         <form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
