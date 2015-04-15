@@ -181,9 +181,9 @@ body, html{
 [type="checkbox"]:checked + label:after {
   content: '✔';
   position: absolute;
-	top: 2px;
-	left: 3px;
-	font-size: 9px;
+  top: 2px;
+  left: 3px;
+  font-size: 9px;
   color: #5ecbec;
   transition: all .2s;
 }
@@ -235,88 +235,88 @@ label:hover:before {
   margin: 0;
 }
 .square{
-	width: 33.333%;
-	height: 300px;
-	display: table;
-	background-color: red;
+  width: 33.333%;
+  height: 300px;
+  display: table;
+  background-color: red;
 }
 .text{
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	background: blue;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  background: blue;
 }
 .imagen{
-	height: 400px;
-	/*display: table;*/
+  height: 400px;
+  /*display: table;*/
 width: 100%;
 }
 .imagen .centrada{
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 .imagenok{
-	background-image:url(../img/img.jpg); 	
+  background-image:url(../img/img.jpg);   
 }
 
 /**/
 .entradaBlog{
-	height: 400px;
-	/*border:solid #000 2px;*/
+  height: 400px;
+  /*border:solid #000 2px;*/
 }
 .entradaBlog .dentro{
-	display: table;
-	text-align: center;
-	height: 100%;
-	width: 100%;
-	background-image: url(../img/estatico/blogEntradas.jpg);
-	background-size: cover;
-	background-position: center center;
+  display: table;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/estatico/blogEntradas.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 .container{
-	width: 100%;
+  width: 100%;
 }
 .entradaBlog .titulo{
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 .entradaBlog .titulo p{
-	width: 100%;
-	background-image-color: rgba(0, 151, 254, 0.5);
-	padding: 15px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 900;
+  width: 100%;
+  background-image-color: rgba(0, 151, 254, 0.5);
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 #container-header .navbar-collapse a{
-	text-transform: uppercase;
-	color:#fff;
-	text-decoration: none;
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration: none;
   font-family: 'titillium_webbold';
 }
 #container-header .navbar-collapse input{
-	right: 0px;
+  right: 0px;
 }
 #container-header .navbar-collapse p{
-	font-size: 11px;
-	color: #225384;
-	font-weight: 900;
+  font-size: 11px;
+  color: #225384;
+  font-weight: 900;
 }
 #container-header .navbar-collapse span{
-	font-size: 11px;
-	color: #225384;
-	font-weight: 900;
+  font-size: 11px;
+  color: #225384;
+  font-weight: 900;
 }
 #container-header .navbar-collapse label{
-	top: 5px;
-	right: 10px;
-	position: absolute;
+  top: 5px;
+  right: 10px;
+  position: absolute;
 }
 #container-header .navbar-collapse p{
-	padding-top:20px;
+  padding-top:20px;
 }
 #navbar .azulPhiladelphia{
-	background: #009bf7;
+  background: #009bf7;
 }
 #navbar{
   background-repeat: repeat-x;
@@ -351,16 +351,16 @@ width: 100%;
   margin-top: -6px;
 }
 #navbar .azulOpaco{
-	background: #004b7c;
+  background: #004b7c;
 }
 #logo{
-	position: absolute;
-	height: 50px;
-	width: 140px;
-	background-image: url(../img/estatico/logo.png);
-	background-size: cover;
-	background-position: center center;
-	z-index: 10;
+  position: absolute;
+  height: 50px;
+  width: 140px;
+  background-image: url(../img/estatico/logo.png);
+  background-size: cover;
+  background-position: center center;
+  z-index: 10;
 }
 #footer li{
   display: inline;
@@ -371,10 +371,10 @@ width: 100%;
   font-size: 12px;
 }
 .titulote{
-	display: table-cell;
-	vertical-align: middle !important;
-	height: 172px;
-	width: 270px;
+  display: table-cell;
+  vertical-align: middle !important;
+  height: 172px;
+  width: 270px;
 }
 #container-receta{
   width: 100%;
@@ -382,24 +382,24 @@ width: 100%;
   background-color: #014282;
 }
 .recetaTitulo{
-	background: #014282;
+  background: #014282;
 }
 .recetaTitulo h1{
-	color:#000000;
+  color:#000000;
 }
 .recetaIngredientes{
-	background: #00adef;
+  background: #00adef;
 }
 .recetaPreparacion{
-	background: #0097fe;
+  background: #0097fe;
 }
 .imgReceta{
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 .white{
-	color:#fff;
+  color:#fff;
 }
 .receta h1 a:visited {
     color: #fff;
@@ -415,51 +415,51 @@ width: 100%;
     color: #fff;
 }
 .azulObscuro{
-	background:#014282;
+  background:#014282;
 }
 .azulObscuro:hover{
-	background: #0097ff;
+  background: #0097ff;
 }
 .azulClaro{
-	background: #0097ff;
+  background: #0097ff;
 }
 .azulClaro:hover{
-	background:#014282;
+  background:#014282;
 }
 .queEs div h1,h2{
-	color:#fff;
+  color:#fff;
 }
 .queEsAzulClaro{
-	padding: 15px;
-	background: #00adef;
+  padding: 15px;
+  background: #00adef;
 }
 .queEs div p{
-	color: #fff;
+  color: #fff;
 }
 .obscuro{
-	padding: 15px;
-	background: #003a60 !important;
+  padding: 15px;
+  background: #003a60 !important;
 }
 .nc{
-	color:#fff;
-	padding:15%;
-	background: url(../img/diseno/queEs/anuncio.png);
+  color:#fff;
+  padding:15%;
+  background: url(../img/diseno/queEs/anuncio.png);
 }
 .u{
-	color:#fff;
-	padding:15%;
-	background: url(../img/diseno/queEs/anuncio2.png);
+  color:#fff;
+  padding:15%;
+  background: url(../img/diseno/queEs/anuncio2.png);
 }
 .aClaro{
-	background: #00adef;
-	padding: 15px;
-	text-align: center;
+  background: #00adef;
+  padding: 15px;
+  text-align: center;
 }
 .ubicacion .que{
-	/*background: url(../img/diseno/queEs/ubicacionQue.jpg);*/
+  /*background: url(../img/diseno/queEs/ubicacionQue.jpg);*/
 }
 .ubicacion .chef{
-	/*background: url(../img/diseno/queEs/ubicacionChefs.jpg);*/
+  /*background: url(../img/diseno/queEs/ubicacionChefs.jpg);*/
 }
 .success-case{
   position: relative;
@@ -488,79 +488,79 @@ width: 100%;
 .success-case:nth-child(even) .success-case-image{ left: 0; }
 .success-case:nth-child(even) .success-case-content{ left: 50%; }
 .ubicacion .col-md-3{
-	height: 400px;
-	display: table;
-	background-image: url(../img/estatico/blogEntradas.jpg);
-	background-size: cover;
-	background-position: center center;
+  height: 400px;
+  display: table;
+  background-image: url(../img/estatico/blogEntradas.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 .ubicacion .col-md-3 .dentro{
-	display: table-cell;
-	vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 .ubicacion .col-md-3 .dentro h1{
-	color: #fff;
-	text-align: center;
-	background-color: rgba(0, 151, 254, 0.5);
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 151, 254, 0.5);
 }
 .producto h2{
-	color: #19467f;
+  color: #19467f;
 }
 .producto p.descripcion{
-	background: #0072bb;
+  background: #0072bb;
 }
 .producto p.formato{
-	background: #00adef;
+  background: #00adef;
 }
 .producto p.ideal{
-	background: #194880;
+  background: #194880;
 }
 .producto p{
-	margin: 0px;
-	color:#fff;
+  margin: 0px;
+  color:#fff;
 }
 .producto h1{
-	color:#fff;
-	text-transform: uppercase;
+  color:#fff;
+  text-transform: uppercase;
 }
 .producto li{
-	color: #fff;
+  color: #fff;
 }
 .azulMarino{
-	background: #003a60;
+  background: #003a60;
 }
 .azulMedio{
-	background: #0072bb;
+  background: #0072bb;
 }
 .azulcielo{
-	background: #00adef;
+  background: #00adef;
 }
 .azulBeneficios{
-	background: #0077c7;
+  background: #0077c7;
 }
 .producto .azulBeneficios h2{
-	color:#fff;
+  color:#fff;
 }
 .casoExito h1{
-	color: #003a60; 
-	text-transform: uppercase;
-	font-weight: 900;
-	text-align: center;
+  color: #003a60; 
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
 }
 .casoExito h2,p{
-	color: #003a60; 	
+  color: #003a60;   
 }
 .premium{
-	background:url('../img/logo_premium.png') no-repeat;
-	height: 90px;
-	width: 90px;
-	position: absolute;top:20px;left: 10px;
+  background:url('../img/logo_premium.png') no-repeat;
+  height: 90px;
+  width: 90px;
+  position: absolute;top:20px;left: 10px;
 }
 .tip_receta{
-	height: 480px;
+  height: 480px;
 }
 .tip_receta h1{
-	background: white;
+  background: white;
 }
 .dentro{
   display: table;
@@ -568,14 +568,14 @@ width: 100%;
   height: 100%;
 }
 .titulo{
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 .tituloTip{
-	text-align: center;
-	display: table-cell;
-	vertical-align:bottom;	
+  text-align: center;
+  display: table-cell;
+  vertical-align:bottom;  
 }
 .flecha{
   /*width: 240px;*/
@@ -622,13 +622,13 @@ body {
   background-color: #f5f5f5;
 }
 .bjack{
-	font-family: 'blackjackregular';
-	text-align: center;
+  font-family: 'blackjackregular';
+  text-align: center;
   text-transform: none;
 }
 .bemio{
-	font-family: 'bemioregular';
-	text-transform: uppercase;
+  font-family: 'bemioregular';
+  text-transform: uppercase;
 }
 .uppercase{
   text-transform: uppercase;
@@ -712,15 +712,6 @@ code {
   border-radius: 0;
   border: 0;
 }
-.recipe-title{
-  width: 100%;
-  height: 68px;
-  position: absolute;
-  bottom: 0;
-  background-color: #194880;
-  color: #fff;
-  line-height: 20px;
-}
 .tip-title,
 .recipe-title{
   width: 100%;
@@ -733,7 +724,7 @@ code {
 }
 .tip-title{ background-color: #0098ff; }
 .tip-title a,
-.recipe-title a,{
+.recipe-title a{
   color: #fff;
   font-family: 'bemioregular';
   text-transform: uppercase;
@@ -745,17 +736,17 @@ code {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-	height: 375px;
-	/*background: red;*/
+  height: 375px;
+  /*background: red;*/
 }
 .indexHome .seccion{
   padding: 0px;
 }
 .indexHome .seccion .pleca{
-	/*background: blue;*/
-	vertical-align: middle;
-	height: 100px;
-	text-align: center;
+  /*background: blue;*/
+  vertical-align: middle;
+  height: 100px;
+  text-align: center;
 }
 .logoPhiladelphia{
   background: url(../img/logoPhiladelphia.png);
@@ -849,16 +840,16 @@ code {
   height: 90px;
 }
 .chefs .seccion{
-	height: 375px;
-	background: red;
-	padding: 0px;
-	display:table;
+  height: 375px;
+  background: red;
+  padding: 0px;
+  display:table;
 }
 .chefs h1{
   color: #fff;
-	text-align: center;
-	font-family: 'bemioregular';
-	text-transform: uppercase;
+  text-align: center;
+  font-family: 'bemioregular';
+  text-transform: uppercase;
   margin: 0;
 }
 .chef-grid{
@@ -874,14 +865,14 @@ code {
   color: #004a80;
 }
 .chefs .col-md-4.seccion .pleca{
-	vertical-align: middle;
+  vertical-align: middle;
 }
 .chefs .col-md-4.seccion .pleca h1{
-	color:#fff;
-	padding: 10px;
+  color:#fff;
+  padding: 10px;
 }
 .descripcionChef h3{
-	font-family: 'blackjackregular';
+  font-family: 'blackjackregular';
   margin: 0;
   font-size: 30px;
 }
@@ -915,21 +906,19 @@ button.close-chef {
 
 }
 .sinPadding{
-	padding: 0px;
+  padding: 0px;
 }
 .queEs .seccion{
-	height: 350px;
-	background: red;
-	display: table;
+  height: 350px;
 }
 .queEs .seccion .pleca{
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 .queEs .pleca h1{
-	background-color: rgba(0, 151, 254, 0.5);
-	padding: 15px;
+  background-color: rgba(0, 151, 254, 0.5);
+  padding: 15px;
 }
 /*/////////////////*/
 .ubicacion,
@@ -940,25 +929,25 @@ button.close-chef {
   margin: 0;
 }
 .ubicacion .seccion{
-	height: 350px;
+  height: 350px;
 }
 .ubicacion .seccion .pleca{
-	color:#fff;
+  color:#fff;
 }
 /*///////////////////*/
 .producto{
 
 }
 .producto .seccion{
-	height: 375px;
-	background: red;
+  height: 375px;
+  background: red;
 }
 .producto .seccion.imagenProcucto{
-	height: 700px;
-	background: blue;
+  height: 700px;
+  background: blue;
 }
 .producto .contenedor{
-	padding: 0px;
+  padding: 0px;
 
 }
 .producto .col-md-8 .seccion h1{
@@ -967,7 +956,7 @@ button.close-chef {
   text-align: center;
 }
 .producto .col-md-8 .seccion img{
-	text-align: center;
+  text-align: center;
 }
 .producto .col-md-8 .seccion .pleca {
   bottom: 0px;
@@ -977,16 +966,16 @@ button.close-chef {
   padding: 10px;
 }
 .producto .col-md-8 .seccion{
-	padding: 0px;
-	bottom: 0px;
-	/*background: green;*/
+  padding: 0px;
+  bottom: 0px;
+  /*background: green;*/
 }
 .producto .seccion .pleca{
-	font-size: 10px;
-	height: 95px;
+  font-size: 10px;
+  height: 95px;
 }
 .producto .bemio{
-	font-size: 20px;
+  font-size: 20px;
 }
 /*////////////*/
 .row.receta{
@@ -1100,4 +1089,9 @@ button.close-chef {
   width:100%;
     height: 100%;
   height:calc(100% - 0px);
+}
+
+.img-hidden{
+  opacity:0;
+  filter: Alpha(opacity=0);
 }

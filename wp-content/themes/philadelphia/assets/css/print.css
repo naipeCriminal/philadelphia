@@ -1,0 +1,13 @@
+@media print{
+
+  .navbar-default,#footer,#btn-regresar-resultados,#btn-regresar-recetas, .btn-imprimir, #btn-ver-tips-receta,.share-facebook {
+    display: none;
+  }
+
+  .imagen img{
+    opacity:1;
+    filter: Alpha(opacity=1);
+    height: 100%;
+  }
+
+}

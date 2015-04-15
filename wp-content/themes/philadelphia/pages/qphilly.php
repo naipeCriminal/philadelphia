@@ -10,14 +10,14 @@
     <form id="registro" role="form" data-toggle="validator">
 <div class="col-md-12 text-center" style="color: white;">
   <h1 class="bjack">¡Queremos hacer equipo contigo!</h1>
-<p style="color: white;">Escríbenos para que uno de nuestros ejecutivos se ponga en contacto contigo y de seguimiento a tu requerimiento de compra.</p>
+  <p style="color: white;">Escríbenos para que uno de nuestros ejecutivos se ponga en contacto contigo y de seguimiento a tu requerimiento de compra.</p>
 </div>
       <div class="col-md-6">
         <div class="col-md-12" style="padding:0px">
           <input type="text" class="form-control" name="nombres" placeholder="NOMBRES Y APELLIDOS">
         </div>        
         <div class="col-md-12" style="padding:0px">
-          <input type="email" class="form-control" name="email" placeholder="EMAIL">
+          <input type="text" class="form-control" name="email" placeholder="EMAIL">
         </div>        
         <div class="col-md-12" style="padding:0px">
           <input type="text" class="form-control" name="telefono" placeholder="TELEFONO">
