@@ -103,7 +103,11 @@
           </table>
         </div>
       <?php endwhile; else: endif; ?>
-     
+      <?php global $post; if( getCantTipsReceta($post->ID) > 0){ ?>
+      <div class="col-xs-12 col-md-6 reset-padding">
+        <button class="btn form-control btn-info bjack btn-bjack" id="btn-ver-tips-receta">Ver tips de esta receta</button>
+      </div>
+      <?php } ?>
       <div class="col-xs-12 col-md-6 reset-padding">
         <button class="btn form-control btn-facebook share-facebook"  data-fbname='<?php the_title(); ?>' data-fbcaption='<?php the_title(); ?>' data-fbdescription='Philadelphia® Food Service tiene para ti la receta de <?php the_title(); ?>, preparada por los Chefs de nuestro Centro Gastronómico' data-fbpicture='<?php echo $imgDestacada; ?>'>Compartir en facebook</button>
       </div>
