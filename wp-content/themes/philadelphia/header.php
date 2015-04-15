@@ -73,7 +73,7 @@
                   <?php } ?>
                 </li>
                 <li>
-                    <a href="">SIGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
+                    <a href="https://www.facebook.com/philadelphiamx" target="_blank">SÍGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
                 </li>
               </ul>
             </div>
