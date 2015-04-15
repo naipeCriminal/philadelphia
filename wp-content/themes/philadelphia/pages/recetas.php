@@ -59,7 +59,7 @@ $cats[] = $term->term_id;
   </div>
   <div class="row ourHolder">
     <?php
-    //Start the Loop  
+    //Start the Loop
     //$values=array('0');
     //if ( is_user_logged_in() ) $values=array('0','1');
     //$wpbp = new WP_Query(array( 'post_type' => array( 'receta', 'tips'),'meta_query'=>array(array('key'=>'wpcf-premium','value'=>$values,'compare'=>'IN')) , 'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) );
