@@ -64,6 +64,8 @@ Template Name Posts: receta
             <?php
             }
             ?>
+
+
             </tbody>
           </table>
           <div class="col-xs-12 col-md-12 reset-padding">
@@ -80,17 +82,19 @@ Template Name Posts: receta
               </tr>
             </thead> -->
             <tbody>
-            <?php
-            $child_posts = types_child_posts('paso');
-            foreach ($child_posts as $child_post) {
-            ?>
-            <tr>
-              <td><?php echo $child_post; ?></td>
-              <td><?php echo $child_post->fields['instrucion-pasos']; ?></td>
-            </tr>
-            <?php
-            }
-            ?>
+           <?php
+           $child_posts = types_child_posts('paso');
+           foreach ($child_posts as $child_post) {
+           ?>
+           <tr>
+             <td><?php echo $child_post->fields['orden-pasos']; ?> </td>
+             <td><?php echo $child_post->fields['glosario']; ?> </td>
+             <td><?php echo $child_post->fields['instrucion-pasos']; ?> </td>
+           </tr>
+           <?php
+           }
+           ?>
+
             </tbody>
           </table>
         </div>
