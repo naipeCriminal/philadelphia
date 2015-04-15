@@ -5,7 +5,9 @@
   }
 
   .imagen img{
-    display:block;
+    opacity:1;
+    filter: Alpha(opacity=1);
+    height: 100%;
   }
 
 }

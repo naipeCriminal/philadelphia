@@ -28,6 +28,11 @@ var App = (function(){
             };
             FB.ui(publish);
         });
+
+       $(document).on("click", ".btn-imprimir",function(event){
+       		event.preventDefault();
+       		window.print();
+       });
 	}
 
 	function guardar(){

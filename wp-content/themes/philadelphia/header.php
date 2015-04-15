@@ -5,9 +5,11 @@
     <title><?php bloginfo('name') ?> <?php wp_title( '|', true, 'left' ); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/layout.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/bootstrap-theme.css"> -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/print.css">
+    <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/animate.css"> -->
 
     <?php 
       global $post;
@@ -64,19 +66,20 @@
                 <li>
                     <a href="?page_id=390">CONTACTO</a>
                 </li>
-                <?php if ( is_user_logged_in() ) {?>
-                  <li>
-                    <a href="?page_id=397">REGISTRO / INGRESO</a>
-                  </li>
-                <?php } ?>
                 <li>
-                    <a href="">SIGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
+                    <a href="https://www.facebook.com/philadelphiamx" target="_blank">SÍGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
                 </li>
-                <?php if ( !is_user_logged_in() ) {?>
-                  <li>
+                <li class="salir">
+                  <?php 
+                    global $current_user;
+                    if ( is_user_logged_in() ) {
+                  ?>
                     <a href="<?php echo wp_logout_url(); ?>">Salir</a>
-                  </li>
-                <?php } ?>
+                    <p>¡Hola <?= $current_user->user_login; ?>!</p>
+                   <?php } else { ?> 
+                    <a href="?page_id=397">REGISTRO / INGRESO</a>
+                  <?php } ?>
+                </li>
               </ul>
             </div>
           </div>
