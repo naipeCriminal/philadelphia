@@ -256,20 +256,18 @@ return true;
 ///////////////
 // The callback function for the [cr] shortcode
 function cr_cb() {
-$fields = array();
-$errors = new WP_Error();
-// Buffer output
-ob_start();
-// Custom registration, go!
-cr($fields, $errors);
-// Return buffer
-return ob_get_clean();
+  $fields = array();
+  $errors = new WP_Error();
+  // Buffer output
+  ob_start();
+  // Custom registration, go!
+  cr($fields, $errors);
+  // Return buffer
+  return ob_get_clean();
 }
 add_shortcode('cr', 'cr_cb');
 
-?>
 
-<?php
 //CUSTOM FUNCTIONS PHILY
 
 function getCantTipsReceta( $nid ){
