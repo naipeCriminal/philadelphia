@@ -1,6 +1,4 @@
-
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
-
 <div class="safe-container articuloDetalle">
   <div class="row">
     <div class="col-md-3 reset-padding">
@@ -39,4 +37,3 @@
   </div>
 </div>
 <?php endwhile; else: ?> <h2>No encontrado</h2> <p>Lo sentimos, intente utilizar nuestro formulario de b&uacute;squedas.</p> <?php endif; ?> 
-
