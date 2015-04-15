@@ -1,10 +1,4 @@
-<?php
-/*
-Template Name Posts: receta
-*/
-//no borrar o de aca arriba
-?>
-<?php get_header(); ?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="safe-container templateReceta">
   <div class="row receta">
@@ -117,4 +111,3 @@ Template Name Posts: receta
       </div>
     </div>
   </div>
-  <?php get_footer(); ?>
