@@ -833,8 +833,12 @@ code {
 }
 .pic .seccion{
   height: 375px;
-  padding: 0px;
-  display:table;
+/*  padding: 0px;
+  display:table;*/
+}
+.title-innovation{
+  font-size: 18px;
+  margin: 0;
 }
 .pic .descripcionChef{
   padding: 10px;
@@ -847,14 +851,9 @@ code {
   text-align: center;
   font-family: 'bemioregular';
   text-transform: uppercase;
-
 }
 .pic .col-md-4.seccion .pleca{
   vertical-align: bottom;
-}
-.pic .col-md-4.seccion .pleca h1{
-  color:#fff;
-  padding: 10px;
 }
 /*/////////////////*/
 /*.chefs .seccion .pleca {
@@ -1184,4 +1183,20 @@ button.close-chef {
 }
 .cobertura-de-cursos{
   background: url(../img/cat/.png);
+}
+.section-new{
+  padding: 0;
+}
+.innovation-centre-square .pleca{
+  background-color: #ffffff;
+  color: #004a81;
+}
+.innovation-centre-square:nth-child(odd) .pleca{
+  background-color: rgba(0, 151, 254, 1);
+  color: rgb(0, 74, 128);
+  color: #004a81;
+  margin: 0;
+}
+.innovation-centre-square:nth-child(even) .pleca .title-innovation{
+  color: #004a81;
 }
