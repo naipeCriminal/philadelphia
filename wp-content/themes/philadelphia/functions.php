@@ -18,7 +18,7 @@ add_action('wp_logout',create_function('','wp_redirect(home_url());exit();'));
 
 function my_cpt_post_types( $post_types ) {
     $post_types[] = 'receta';
-    $post_types[] = 'tip-para-subir';
+    $post_types[] = 'tip-philadelphia';
     return $post_types;
 }
 add_filter( 'cpt_post_types', 'my_cpt_post_types' );

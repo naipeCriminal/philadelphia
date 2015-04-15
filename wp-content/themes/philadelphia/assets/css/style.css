@@ -539,9 +539,9 @@ width: 100%;
 	color: #003a60; 	
 }
 .premium{
-	background:red;
-	height: 60px;
-	width: 60px;
+	background:url('../img/logo_premium.png') no-repeat;
+	height: 90px;
+	width: 90px;
 	position: absolute;top:20px;left: 10px;
 }
 .tip_receta{
