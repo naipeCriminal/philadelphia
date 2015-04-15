@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/bootstrap-theme.css"> -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/print.css">
     <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/animate.css"> -->
 
     <?php 

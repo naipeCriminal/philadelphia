@@ -9,14 +9,14 @@ Template Name Posts: receta
 <div class="safe-container templateReceta">
   <div class="row receta">
     <div class="col-md-3">
-      <a href="?page_id=381">
-        <button class="btn form-control btn-default text-left">Regresar a recetas</button>
+      <a href="?page_id=381" id="btn-regresar-recetas">
+        <button class="btn form-control btn-default text-left" >Regresar a recetas</button>
       </a>
     </div>
     <div class="col-md-6 text-center">
       <h1 class="bemio" id="title-header-recipes-tips">Recetas <span class="bjack">y Tips</span></h1></div>
       <div class="col-md-3">
-        <button class="btn form-control btn-info text-right">Regresar a Resultados</button>
+        <button class="btn form-control btn-info text-right" id="btn-regresar-resultados">Regresar a Resultados</button>
       </div>
       <div class="col-xs-12 col-md-12 reset-padding">
         <div id="container-caracteristicas">
@@ -35,6 +35,7 @@ Template Name Posts: receta
         </div>
         <?php global $post;$thumbID = get_post_thumbnail_id( $post->ID );$imgDestacada = wp_get_attachment_url( $thumbID );?>
         <div class="imagen" style="background-image:url(<?php echo $imgDestacada; ?>);">
+          <img src="<?php echo $imgDestacada; ?>" alt="<?php the_title(); ?>" />
           <div class="logoPhiladelphia"></div>
         </div>
       </div>
@@ -66,7 +67,7 @@ Template Name Posts: receta
             </tbody>
           </table>
           <div class="col-xs-12 col-md-12 reset-padding">
-            <button class="btn form-control btn-info">Versión para imprimir.</button>
+            <button class="btn form-control btn-info btn-imprimir">Imprimir</button>
           </div>
         </div>
         <div class="col-xs-12 col-md-6" style="border:1px #fff solid;background:#014282;">
@@ -95,7 +96,7 @@ Template Name Posts: receta
         </div>
       <?php endwhile; else: endif; ?>
       <div class="col-xs-12 col-md-6 reset-padding">
-        <button class="btn form-control btn-info bjack btn-bjack">Ver tips de esta receta</button>
+        <button class="btn form-control btn-info bjack btn-bjack" id="btn-ver-tips-receta">Ver tips de esta receta</button>
       </div>
       <div class="col-xs-12 col-md-6 reset-padding">
         <button class="btn form-control btn-facebook share-facebook"  data-fbname='<?php the_title(); ?>' data-fbcaption='<?php the_title(); ?>' data-fbdescription='Philadelphia® Food Service tiene para ti la receta de <?php the_title(); ?>, preparada por los Chefs de nuestro Centro Gastronómico' data-fbpicture='<?php echo $imgDestacada; ?>'>Compartir en facebook</button>
