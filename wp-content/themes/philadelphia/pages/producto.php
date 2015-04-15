@@ -27,7 +27,7 @@
       </ul>
     </div>
     <div class="col-md-8 contenedor">
-      <div class="seccion col-xs-12 col-md-6" style="background-image:url('wp-content/themes/philadelphia/assets/img/producto-8kg.png')">
+      <div class="seccion col-xs-12 col-md-6" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/producto-8kg.png')">
         <h2 class="bemio" style="color:#184981">PHILADELPHIA ORIGINAL 8 KG</h2>
         <!-- <img src="imagen/.png" alt=""> -->
         <div class="pleca" style="background:#194880;">
@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="seccion col-xs-12 col-md-6" style="background-image:url('wp-content/themes/philadelphia/assets/img/producto-prod-rebanadas.png')">
+      <div class="seccion col-xs-12 col-md-6" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/producto-prod-rebanadas.png')">
         <h1 class="bemio" style="color:#007ecb">PHILADELPHIA ORIGINAL <br> REBANADAS 7.776 KG</h1>
         <!-- <img src="imagen/.png" alt=""> -->
         <div class="pleca" style="background:#007dcd;">
@@ -63,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="seccion col-xs-12 col-md-6" style="background-image:url('wp-content/themes/philadelphia/assets/img/producto-1.9kg.png')">
+      <div class="seccion col-xs-12 col-md-6" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/producto-1.9kg.png')">
         <h1 class="bemio" style="color:#17497e">PHILADELPHIA ORIGINAL <br> 6 CAJAS DE 1.9 KG</h1>
         <!-- <img src="imagen/.png" alt=""> -->
         <div class="pleca" style="background:#00adef">
@@ -81,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div class="seccion col-xs-12 col-md-6" style="background-image:url('wp-content/themes/philadelphia/assets/img/producto-28g.png')">
+      <div class="seccion col-xs-12 col-md-6" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/producto-28g.png')">
         <h1 class="bemio" style="color:#0b4da1">PHILADELPHIA ORIGINAL 28G</h1>
         <!-- <img src="imagen/.png" alt=""> -->
         <div class="pleca" style="background:#0c4ca3;">
@@ -101,7 +101,7 @@
       </div>
     </div>
     <div class="col-md-4 contenedor text-center">
-      <div class="seccion col-xs-12 col-md-12 imagenProcucto" style="background-image:url('wp-content/themes/philadelphia/assets/img/producto-descubre.jpg')">
+      <div class="seccion col-xs-12 col-md-12 imagenProcucto" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/producto-descubre.jpg')">
         <p class="bjack" style="color: #184981;">Descubre las maravillas que puedes hacer con nuestros productos te compartimos deliciosas recetas que te van a encantar.</p>
       </div>
     </div>

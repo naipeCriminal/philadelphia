@@ -10,7 +10,7 @@
       <p class="text-left">Uno de nuestros objetivos principales es potencializar tu negocio; sin importar giro o tamaño, te apoyamos con la generación de ideas culinarias innovadoras basadas en las estaciones o tendencias, y te brindamos capacitación de procesos específicos durante todo el año.</p>
       <h2><span class="bjack">¡Dale más sabor a tu negocio con Philadelphia!</span></h2>
     </div>
-    <div class="col-xs-12 col-md-4 seccion" style="background-image:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-noticias.jpg');">
+    <div class="col-xs-12 col-md-4 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico-noticias.jpg');">
       <br>
     </div>
     <div class="col-xs-12 col-md-6 seccion text-center" style="background:#003a60;">
@@ -25,7 +25,7 @@
     <div class="col-xs-12 col-md-6 seccion" style="padding:0px;">
       <iframe width="100%" height="350" src="https://www.youtube.com/embed/bTtHL4W8G68" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="col-xs-12 col-md-4 seccion" style="background-image:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-ubicacion.jpg');">
+    <div class="col-xs-12 col-md-4 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-ubicacion.jpg');">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=304">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4 seccion reset-padding" style="background-image:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-nuestroschefs.jpg');">
+    <div class="col-xs-12 col-md-4 seccion reset-padding" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico-nuestroschefs.jpg');">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=299">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4 seccion reset-padding" style="background-image:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-noticias.jpg');">
+    <div class="col-xs-12 col-md-4 seccion reset-padding" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico-noticias.jpg');">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=469">

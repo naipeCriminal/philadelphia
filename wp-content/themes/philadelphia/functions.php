@@ -279,9 +279,14 @@ function getCantTipsReceta( $nid ){
 
 function getContentTemplate( $post ){
   //REFACTORIZAR CON EXPRESIONES REGULARES :-D
-  $posi = strpos("[use:",$post->post_content)+5;
-  $posf = strpos("]",$post->post_content, $posi)-1;
-  return substr($post->post_content,$posi,$posf );
+  $posi = strpos($post->post_content,"[use:");
+  if($posi > -1){
+    $posi+=5;
+    $posf = strpos($post->post_content,"\]", $posi)-1;
+    return substr($post->post_content,$posi,$posf );
+  }else{
+    return "";
+  }
 }
 
 ?>
