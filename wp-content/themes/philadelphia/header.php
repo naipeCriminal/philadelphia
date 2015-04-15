@@ -13,14 +13,36 @@
     <?php
     global $post;
     //print_r($post);
-    if($post->post_type =="receta"){
-    $thumbID = get_post_thumbnail_id( $post->ID );
-    $imgDestacada = wp_get_attachment_url( $thumbID );
-    
-    $ogTitle = $post->post_title;
-    $ogDescription = "Philadelphia® Food Service tiene para ti la receta de ".$post->title.", preparada por los Chefs de nuestro Centro Gastronómico";
-    $ogUrl = $post->guid;
-    $ogImage = $imgDestacada;
+    if( $post->post_type =="receta" || 
+        $post->post_type =="noticia" || 
+        $post->post_type =="tip" || 
+        $post->post_type =="ing" || 
+        $post->post_type =="sweet-report" || 
+        $post->post_type =="cocina-salud" ||
+        $post->post_type =="cobertura-de-cursos" ||
+        $post->post_type =="tip-philadelphia" ||
+        $post->post_type =="pasos-para-subir" ||
+        $post->post_type =="new-and-tasty" ||
+        $post->post_type =="el-ingrediente-hot" ||
+        $post->post_type =="philly-trends" ||
+        $post->post_type =="sweet-reports" ||
+        $post->post_type =="philly-lab"){
+
+      $thumbID = get_post_thumbnail_id( $post->ID );
+      $imgDestacada = wp_get_attachment_url( $thumbID );
+      
+      $ogTitle = $post->post_title;
+      if( $post->post_type =="receta" ){
+        $ogDescription = "Philadelphia® Food Service tiene para ti la receta de ".$post->title.", preparada por los Chefs de nuestro Centro Gastronómico";
+      }else{
+        $content = $post->post_content;
+        if( strlen($content) > 140 ){
+          $content = substr($post->post_content,0,140)."...";
+        }
+        $ogDescription = $content;    
+      }
+      $ogUrl = $post->guid;
+      $ogImage = $imgDestacada;
     ?>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $ogTitle ?>">
@@ -82,6 +104,5 @@
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>

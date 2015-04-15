@@ -122,12 +122,12 @@ if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
         </form>
       </div>
       <div class="col-md-8 reset-padding">
-        <img src="wp-content/themes/philadelphia/assets/img/food-service-login-top.jpg" alt="" width="100%">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-login-top.jpg" alt="" width="100%">
       </div>
     </div>
     <div id="container-registro">
       <div class="col-md-4 reset-padding">
-        <img src="wp-content/themes/philadelphia/assets/img/food-service-login-bottom.jpg" alt="" width="100%">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-login-bottom.jpg" alt="" width="100%">
       </div>
       <div class="col-md-8 text-center">
         <form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
@@ -256,20 +256,18 @@ return true;
 ///////////////
 // The callback function for the [cr] shortcode
 function cr_cb() {
-$fields = array();
-$errors = new WP_Error();
-// Buffer output
-ob_start();
-// Custom registration, go!
-cr($fields, $errors);
-// Return buffer
-return ob_get_clean();
+  $fields = array();
+  $errors = new WP_Error();
+  // Buffer output
+  ob_start();
+  // Custom registration, go!
+  cr($fields, $errors);
+  // Return buffer
+  return ob_get_clean();
 }
 add_shortcode('cr', 'cr_cb');
 
-?>
 
-<?php
 //CUSTOM FUNCTIONS PHILY
 
 function getCantTipsReceta( $nid ){
@@ -280,10 +278,15 @@ function getCantTipsReceta( $nid ){
 }
 
 function getContentTemplate( $post ){
-  
-  $posi = strpos("[use:",$post->post_content)+5;
-  $posf = strpos("]",$post->post_content, $posi)-1;
-  return substr($post->post_content,$posi,$posf );
+  //REFACTORIZAR CON EXPRESIONES REGULARES :-D
+  $posi = strpos($post->post_content,"[use:");
+  if($posi > -1){
+    $posi+=5;
+    $posf = strpos($post->post_content,"\]", $posi)-1;
+    return substr($post->post_content,$posi,$posf );
+  }else{
+    return "";
+  }
 }
 
 ?>

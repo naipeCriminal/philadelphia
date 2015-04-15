@@ -5,6 +5,7 @@ global $post;
 //Routing [use:PAGENAME]
 $template = getContentTemplate($post);
 if( $template !=""){
+
   include_once($template);
 }else{
   //Wordpress default route

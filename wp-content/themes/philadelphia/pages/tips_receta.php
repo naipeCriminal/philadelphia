@@ -9,50 +9,13 @@ $term = get_term_by ('name',$category,'category');
 $cats[] = $term->term_id;
 }
 ?>
-<!-- esto se puede borrar -->
-<div class="container" id="filter-recipes">
-  <div class="row">
-    <div class="col-md-offset-2 col-md-4">
-      <h1 class="bemio">Personaliza los resultados eligiendo que quieres ver</h1>
-    </div>
-    <!-- <div class="col-md-2">
-      <div class="checkbox" data-filtro="all">
-        <span>TODO</span>
-        <input type="checkbox" value="None" name="check" checked />
-        <label for="P"></label>
-      </div>
-    </div> -->
-    <div class="col-md-2">
-      <div class="checkbox" data-filtro="panaderia">
-        <span>PANADERÍA</span>
-        <input type="checkbox" value="None" name="check" checked />
-        <label for="P"></label>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="checkbox" data-filtro="hoteles-y-restaurantes">
-        <span>HOTELES </span>
-        <br>
-        <span>Y RESTAURANTES</span>
-        <input type="checkbox" value="None" id="HOTELES-Y-RESTAURANTES" name="check" checked />
-        <label for="p"></label>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="checkbox" data-filtro="pasteleria-y-cafeteria">
-        <span class="pasteleria-y-cafeteria">CAFÉS Y PASTELERÍA</span>
-        <input type="checkbox" value="None"  name="check" checked />
-        <label for="p"></label>
-      </div>
-    </div>
-  </div>
-</div>
+
 <div class="safe-container">
   <div class="row">
     <div id="header-tips-recipes" class="col-md-12">
       <div class="table">
         <div class="cell-center">
-          <span class="bemio uppercase">Recetas</span><span class="bjack"> y tips</span>
+          <span class="bemio uppercase">Tips de la receta </span><span class="bjack"> nopmbre de la receta</span>
         </div>
       </div>
     </div>
@@ -63,7 +26,7 @@ $cats[] = $term->term_id;
     //$values=array('0');
     //if ( is_user_logged_in() ) $values=array('0','1');
     //$wpbp = new WP_Query(array( 'post_type' => array( 'receta', 'tips'),'meta_query'=>array(array('key'=>'wpcf-premium','value'=>$values,'compare'=>'IN')) , 'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) );
-    $wpbp = new WP_Query(array( 'post_type' => array( 'receta', 'tip-philadelphia'),'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) );
+    $wpbp = new WP_Query(array( 'post_type' => array('tip-philadelphia'),'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) );
     if ($wpbp->have_posts()) : while ($wpbp->have_posts()) : $wpbp->the_post();
     // Ruta de la imagen destacada (tamaño completo)
     global $post;
