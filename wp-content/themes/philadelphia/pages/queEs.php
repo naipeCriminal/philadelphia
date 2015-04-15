@@ -16,8 +16,7 @@
       <h1 class="bjack" style="font-size:24px">¡Ha tu negocio más versátil! <br>¡Personaliza tus recetas con Philadelphia!</h1>
     </div>
     <div class="col-xs-12 col-md-6 seccion" style="padding:0px;">
-      <div class="col-md-8" id="map-canvas">
-      </div>
+      <iframe width="100%" height="350" src="https://www.youtube.com/embed/bTtHL4W8G68" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="col-xs-12 col-md-4 seccion sinPadding" style="background:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-ubicacion.jpg');background-size: cover; background-position: center center;">
       <div class="pleca">
