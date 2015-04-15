@@ -1,17 +1,19 @@
 <div id="footer">
-	<ul>
-		<li><a href="http://mx.mondelezinternational.com/"><img src="<?php bloginfo('template_url'); ?>/assets/img/estatico/mondelez.png" width="150px" alt=""></a></li>
-		<li>
-			<select name="" id="">
-				<option value="2015">MONDELEZ EN EL MUNDO</option>
-			</select>
-		</li>
-		<li><a href="#">Contáctanos</a></li>
-		<li><a href="#pregunta" role="button" data-toggle="modal">Preguntas frecuentes</a></li>
-		<li><a href="#politica" role="button" data-toggle="modal">Políticas de privacidad y términos de uso.</a></li>
-		<li><a href="#legal" role="button" data-toggle="modal">Aviso Legal</a></li>
-		<li>Derechos Reservados 2014 Mondeléz México, S de R.L.de C.V.</li>
-	</ul>
+    <div class="safe-container">
+  	<ul>
+  		<li><a href="http://mx.mondelezinternational.com/"><img src="<?php bloginfo('template_url'); ?>/assets/img/estatico/mondelez.png" width="150px" alt=""></a></li>
+  		<li>
+  			<select name="" id="">
+  				<option value="2015">MONDELEZ EN EL MUNDO</option>
+  			</select>
+  		</li> 
+  		<li><a href="#">Contáctanos</a></li>
+  		<li><a href="#pregunta" role="button" data-toggle="modal">Preguntas frecuentes</a></li>
+  		<li><a href="#politica" role="button" data-toggle="modal">Políticas de privacidad y términos de uso.</a></li>
+  		<li><a href="#legal" role="button" data-toggle="modal">Aviso Legal</a></li>
+  		<li>Derechos Reservados 2014 Mondeléz México, S de R.L.de C.V.</li>
+  	</ul>
+  </div>
 </div>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery-1.9.1.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.js" ></script>
