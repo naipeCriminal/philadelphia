@@ -2,13 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title><?php bloginfo('name') ?> <?php wp_title( '|', true, 'left' ); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/layout.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/bootstrap-theme.css"> -->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
     <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/animate.css"> -->
+
+    <?php 
+      global $post;
+      //print_r($post);
+      if($post->post_type =="receta"){ 
+        $thumbID = get_post_thumbnail_id( $post->ID );
+        $imgDestacada = wp_get_attachment_url( $thumbID );
+        
+        $ogTitle = $post->post_title;
+        $ogDescription = "Philadelphia® Food Service tiene para ti la receta de ".$post->title.", preparada por los Chefs de nuestro Centro Gastronómico";
+        $ogUrl = $post->guid;
+        $ogImage = $imgDestacada;
+    ?>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?= $ogTitle ?>">
+    <meta property="og:site_name" content="<?php bloginfo('name') ?>">
+    <meta property="og:url" content="<?= $ogUrl ?>">
+    <meta property="og:description" content="<?= $ogDescription ?>">
+    <meta property="og:image" content="<?= $ogImage ?>">
+    <?php } ?>
+
     <?php wp_head(); ?>
   </head>
   <body>
