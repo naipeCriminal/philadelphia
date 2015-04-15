@@ -29,10 +29,17 @@
       <?php the_content(); ?>
     </div>
     <div class="col-md-6 reset-padding">
+<<<<<<< HEAD
       <button class="btn form-control btn-default btn-imprimir">Imprimir</button>
     </div>
     <div class="col-md-6 reset-padding">
       <button class="btn form-control btn-facebook share-facebook">Compartir en fb</button>
+=======
+      <button class="btn form-control btn-default">version para imprimir</button>
+    </div>
+    <div class="col-md-6 reset-padding">
+      <button class="btn form-control btn-facebook">compartir en fb</button>
+>>>>>>> origin/master
     </div>
   </div>
 </div>
