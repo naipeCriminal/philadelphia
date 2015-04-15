@@ -1,10 +1,4 @@
-<?php
-/*
-Template Name Posts: receta
-*/
-//no borrar o de aca arriba
-?>
-<?php get_header(); ?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="safe-container templateReceta">
   <div class="row receta">
@@ -75,8 +69,6 @@ Template Name Posts: receta
             <?php
             }
             ?>
-
-
             </tbody>
           </table>
           <div class="col-xs-12 col-md-12 reset-padding">
@@ -93,7 +85,7 @@ Template Name Posts: receta
               </tr>
             </thead> -->
             <tbody>
-<<<<<<< HEAD
+
             <?php
             $child_posts = types_child_posts('paso');
             foreach ($child_posts as $child_post) {
@@ -106,32 +98,19 @@ Template Name Posts: receta
             <?php
             }
             ?>
-=======
-           <?php
-           $child_posts = types_child_posts('paso');
-           foreach ($child_posts as $child_post) {
-           ?>
-           <tr>
-             <td><?php echo $child_post->fields['orden-pasos']; ?> </td>
-             <td><?php echo $child_post->fields['glosario']; ?> </td>
-             <td><?php echo $child_post->fields['instrucion-pasos']; ?> </td>
-           </tr>
-           <?php
-           }
-           ?>
 
->>>>>>> 66934f4a73238516351b0d411194f418444432e4
             </tbody>
           </table>
         </div>
       <?php endwhile; else: endif; ?>
+      <?php global $post; if( getCantTipsReceta($post->ID) > 0){ ?>
       <div class="col-xs-12 col-md-6 reset-padding">
         <button class="btn form-control btn-info bjack btn-bjack" id="btn-ver-tips-receta">Ver tips de esta receta</button>
       </div>
+      <?php } ?>
       <div class="col-xs-12 col-md-6 reset-padding">
         <button class="btn form-control btn-facebook share-facebook"  data-fbname='<?php the_title(); ?>' data-fbcaption='<?php the_title(); ?>' data-fbdescription='Philadelphia® Food Service tiene para ti la receta de <?php the_title(); ?>, preparada por los Chefs de nuestro Centro Gastronómico' data-fbpicture='<?php echo $imgDestacada; ?>'>Compartir en facebook</button>
       </div>
       </div>
     </div>
   </div>
-  <?php get_footer(); ?>

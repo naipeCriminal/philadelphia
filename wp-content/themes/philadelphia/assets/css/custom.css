@@ -16,8 +16,8 @@
 }
 form{
 	float: left;
-	background: rgb(0, 74, 128);
 	padding-top: 15px;
+	width: 100%;
 }
 .table .table{
 	background-color: transparent;

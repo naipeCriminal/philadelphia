@@ -35,6 +35,14 @@ var App = (function(){
        });
 	}
 
+	function iniciaQuieroPhily(){
+		setTimeout(function(){
+
+			$(".quierophily").css("margin-left: 0px")
+
+		},10000);
+	}
+
 	function guardar(){
 		$.ajax({
 			url: 'wp-content/themes/philadelphia/assets/php/guardar.php',
@@ -91,6 +99,8 @@ var App = (function(){
 			iniciaEventos();
 			animaMenu();
 			animaPost();
+
+			iniciaQuieroPhily();
 
 			$(".mandarCorreo").on("click",function(e){
 				e.preventDefault();
