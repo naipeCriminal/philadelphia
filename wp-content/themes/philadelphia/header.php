@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="http://www.developercatorcedias.com/foodservice/site">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/estatico/logo.png" alt="">
+                    <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/estatico/logo.png" alt="">
                   </a>
                 </li>
                 <li>
@@ -76,6 +76,7 @@
                   ?>
                     <a href="<?php echo wp_logout_url(); ?>">Salir</a>
                     <p>¡Hola <?= $current_user->user_login; ?>!</p>
+
                    <?php } else { ?> 
                     <a href="?page_id=397">REGISTRO / INGRESO</a>
                   <?php } ?>

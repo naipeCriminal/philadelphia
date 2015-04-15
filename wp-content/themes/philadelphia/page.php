@@ -23,6 +23,8 @@ if ( is_front_page()) {
   include_once("pages/c_gastronomico.php");
 }else if(is_page(310)){
   include_once("pages/producto.php");
+}else if(is_page(1043)){
+  include_once("pages/qphilly.php");
 }else{
 	//Wordpress default route
 	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -91,6 +91,20 @@ Template Name Posts: receta
               </tr>
             </thead> -->
             <tbody>
+<<<<<<< HEAD
+            <?php
+            $child_posts = types_child_posts('paso');
+            foreach ($child_posts as $child_post) {
+            ?>
+            <tr>
+              <td><?php echo $child_post->fields['orden-pasos']; ?> </td>
+              <td><?php echo $child_post->fields['glosario']; ?> </td>
+              <td><?php echo $child_post->fields['instrucion-pasos']; ?> </td>
+            </tr>
+            <?php
+            }
+            ?>
+=======
            <?php
            $child_posts = types_child_posts('paso');
            foreach ($child_posts as $child_post) {
@@ -104,6 +118,7 @@ Template Name Posts: receta
            }
            ?>
 
+>>>>>>> 66934f4a73238516351b0d411194f418444432e4
             </tbody>
           </table>
         </div>
