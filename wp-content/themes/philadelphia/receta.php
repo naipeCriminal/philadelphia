@@ -20,18 +20,29 @@ Template Name Posts: receta
       </div>
       <div class="col-xs-12 col-md-12 reset-padding">
         <div id="container-caracteristicas">
-          <div class="caracteristica" style="background-image:url('wp-content/themes/philadelphia/assets/img/recetas-tiempo.jpg');">
-            <h4><?php echo( types_render_field("tiempo-de-preparacion",array('row'=>true))); ?></h4>
-          </div>
-          <div class="caracteristica" style="background-image:url('wp-content/themes/philadelphia/assets/img/recetas-tiempo-dehorneado.jpg');">
-            <h4><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?> </h4>
-          </div>
-          <div class="caracteristica" style="background-image:url('wp-content/themes/philadelphia/assets/img/recetas-rinde.jpg');">
-            <h4><?php echo( types_render_field("porciones",array('row'=>true))); ?></h4>
-          </div>
-          <div class="caracteristica" style="background-image:url('wp-content/themes/philadelphia/assets/img/recetas-categoria.jpg');">
-            <h4><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?></h4>
-          </div>
+          <ul>
+            <li>
+              <img src="wp-content/themes/philadelphia/assets/img/recetas-tiempo.jpg" />
+              <span><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?></span>
+            </li>
+            <li>
+              <img src="wp-content/themes/philadelphia/assets/img/recetas-tiempo-dehorneado.jpg" />
+              <span><?php echo( types_render_field("tiempo-de-preparacion",array('row'=>true))); ?></span>
+            </li>
+            <li>
+              <img src="wp-content/themes/philadelphia/assets/img/recetas-rinde.jpg" />
+              <span><?php echo( types_render_field("porciones",array('row'=>true))); ?></span>
+            </li>
+            <li>
+              <img src="wp-content/themes/philadelphia/assets/img/recetas-categoria.jpg" />
+              <span><?php echo( types_render_field("categoria",array('row'=>true))); ?></span>
+            </li>
+            <li>
+              <img src="wp-content/themes/philadelphia/assets/img/recetas-tiempo-refrigeracion.jpg" />
+              <span><?php echo( types_render_field("tiempo-de-refrigeracion",array('row'=>true))); ?></span>
+            </li>
+          </ul>
+
         </div>
         <?php global $post;$thumbID = get_post_thumbnail_id( $post->ID );$imgDestacada = wp_get_attachment_url( $thumbID );?>
         <div class="imagen" style="background-image:url(<?php echo $imgDestacada; ?>);">
@@ -64,8 +75,6 @@ Template Name Posts: receta
             <?php
             }
             ?>
-
-
             </tbody>
           </table>
           <div class="col-xs-12 col-md-12 reset-padding">

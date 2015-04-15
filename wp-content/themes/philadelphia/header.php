@@ -67,14 +67,18 @@
                     <a href="?page_id=390">CONTACTO</a>
                 </li>
                 <li>
-                  <?php if ( is_user_logged_in() ) {?>
+                    <a href="https://www.facebook.com/philadelphiamx" target="_blank">SÍGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
+                </li>
+                <li class="salir">
+                  <?php 
+                    global $current_user;
+                    if ( is_user_logged_in() ) {
+                  ?>
                     <a href="<?php echo wp_logout_url(); ?>">Salir</a>
+                    <p>¡Hola <?= $current_user->user_login; ?>!</p>
                    <?php } else { ?> 
                     <a href="?page_id=397">REGISTRO / INGRESO</a>
                   <?php } ?>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/philadelphiamx" target="_blank">SÍGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
                 </li>
               </ul>
             </div>
