@@ -1200,3 +1200,15 @@ button.close-chef {
 .innovation-centre-square:nth-child(even) .pleca .title-innovation{
   color: #004a81;
 }
+.section-details h1{
+  margin: 0;
+  padding: 0;
+  color: #004a80;
+}
+.section-details h3{
+  margin: 0;
+  font-weight: bold;
+  font-size: 37px;
+  margin-bottom: 20px;
+  color: rgb(0, 74, 128);
+}

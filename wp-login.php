@@ -880,7 +880,7 @@ default:
 		<label for="user_pass"><?php _e('Password') ?><br />
 		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
 	</p>
-	<?php
+<?php
 	/**
 	 * Fires following the 'Password' field in the login form.
 	 *

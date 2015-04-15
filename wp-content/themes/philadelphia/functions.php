@@ -115,31 +115,36 @@ function cr_display_form($fields = array(), $errors = null) {
   
   ?>
 
-<div class="container">
+<div class="safe-container">
   <div class="row">
-    <div class="col-md-4">
-
-<form name="loginform" id="loginform" action="<?php echo get_option('home'); ?>/wp-login.php" method="post">
-    <p>
-        <label>Username<br />
-        <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="10" /></label>
-    </p>
-    <p>
-        <label>Password<br />
-        <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="20" /></label>
-    </p>
-    <p class="forgetmenot"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /> Remember Me</label></p>
-    <p class="submit">
-        <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="100" />
-        <input type="hidden" name="redirect_to" value="<?php echo get_option('home'); ?>/index.php" />
-        <input type="hidden" name="testcookie" value="1" />
-    </p>
-</form>
-
-
+    <div class="col-md-12">
+      <h1 class="bemio" style="color: #1a477e;text-align: center;font-size: 35px;">FOOD SERVICE: ¡DALE MÁS SABOR A TU NEGOCIO!</h1>
     </div>
-    <div class="col-md-8" style="background:url('wp-content/themes/philadelphia/assets/img/');background-size: cover; background-position: center center;"></div>
-    <div class="col-md-4" style="background:url('wp-content/themes/philadelphia/assets/img/');background-size: cover; background-position: center center;"></div>
+    <div class="col-md-4 reset-padding">
+      <form name="loginform" id="loginform" action="<?php echo get_option('home'); ?>/wp-login.php" method="post">
+          <p>
+              <label>Username</label>
+          </p>
+          <p><input type="text" name="log" id="user_login" class="form-control" value="" size="20" tabindex="10" /></p>
+          <p>
+              <label>Password</label>
+              <p><input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" tabindex="20" /></p>
+          </p>
+          <p><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /></p>
+          <p class="forgetmenot">
+            <label>Remember Me</label>
+          </p>
+          <p class="submit text-right">
+              <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-default" value="Ingresar" tabindex="100" />
+              <input type="hidden" name="redirect_to" value="<?php echo get_option('home'); ?>/index.php" />
+              <input type="hidden" name="testcookie" value="1" />
+          </p>
+      </form>
+    </div>
+    <div class="col-md-8" style="background:url('wp-content/themes/philadelphia/assets/img/food-service-login-top.jpg');background-size: cover; background-position: center center;">     
+      <img src="wp-content/themes/philadelphia/assets/img/food-service-login-top.jpg" alt="">
+    </div>
+    <div class="col-md-4" style="background:url('wp-content/themes/philadelphia/assets/img/food-service-login-top.jpg');background-size: cover; background-position: center center;"></div>
     <div class="col-md-8">
     <form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
       <div class="col-md-12">

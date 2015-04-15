@@ -41,7 +41,7 @@
             <div class="pleca">
               <div class="table">
                 <div class="cell-center">
-                  <a href="?page_id=469">
+                  <a href="?page_id=299">
                     <h1 class="bemio"><span class="bjack">Nuestros</span><br> CHEFS</h1>
                   </a>
                 </div>
