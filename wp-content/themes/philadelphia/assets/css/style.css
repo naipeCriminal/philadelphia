@@ -686,6 +686,21 @@ code {
   width: 100%;
   height: 100%;
   display: table;
+  margin-bottom: 0;
+}
+.section-new .pleca{
+  background-color: #fff;
+  color: #004a81;
+}
+.section-new:nth-child(even) .pleca{
+  background-color: rgba(0, 151, 254, 1);
+}
+.new-title{
+  color: #004a81;
+  margin: 0;
+}
+.section-new:nth-child(even) .pleca .new-title{
+  color: #fff;
 }
 .cell-center{
   text-align: center;
@@ -923,16 +938,10 @@ button.close-chef {
 	padding: 0px;
 }
 .queEs .seccion{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
 	height: 350px;
-}
-.queEs .seccion .pleca{
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
-}
-.queEs .pleca h1{
-	background-color: rgba(0, 151, 254, 0.5);
-	padding: 15px;
 }
 /*/////////////////*/
 .ubicacion,
