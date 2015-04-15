@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="http://www.developercatorcedias.com/foodservice/site">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/estatico/logo.png" alt="">
+                    <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/img/estatico/logo.png" alt="">
                   </a>
                 </li>
                 <li>
@@ -67,7 +67,7 @@
                 </li>
                 <li>
                   <?php if ( is_user_logged_in() ) {?>
-                    <a href="<?php echo wp_logout_url(); ?>">Salir</a>
+                    <a href="<?php echo wp_logout_url(); ?>">Salir <img src="<?php bloginfo('template_url'); ?>/assets/img/unnamed2.png" alt=""></a>
                    <?php } else { ?> 
                     <a href="?page_id=397">REGISTRO / INGRESO</a>
                   <?php } ?>

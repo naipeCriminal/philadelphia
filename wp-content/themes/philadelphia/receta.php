@@ -84,8 +84,9 @@ Template Name Posts: receta
             foreach ($child_posts as $child_post) {
             ?>
             <tr>
-              <td><?php echo $child_posts; ?></td>
-              <td><?php echo $child_post->fields['instrucion-pasos']; ?></td>
+              <td><?php echo $child_post->fields['orden-pasos']; ?> </td>
+              <td><?php echo $child_post->fields['glosario']; ?> </td>
+              <td><?php echo $child_post->fields['instrucion-pasos']; ?> </td>
             </tr>
             <?php
             }
