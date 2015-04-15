@@ -503,6 +503,15 @@ width: 100%;
 	text-align: center;
 	background-color: rgba(0, 151, 254, 0.5);
 }
+#page-producto{ color: #fff; }
+#page-producto h3 {
+  font-family: 'bemioregular';
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-weight: normal;
+  font-size: 18px;
+}
 .producto h2{
 	color: #19467f;
 }
@@ -521,10 +530,13 @@ width: 100%;
 }
 .producto h1{
 	color:#fff;
-	text-transform: uppercase;
 }
 .producto li{
 	color: #fff;
+  color: #fff;
+  width: auto;
+  padding: 0;
+  list-style: none;
 }
 .azulMarino{
 	background: #003a60;
@@ -712,15 +724,6 @@ code {
   border-radius: 0;
   border: 0;
 }
-.recipe-title{
-  width: 100%;
-  height: 68px;
-  position: absolute;
-  bottom: 0;
-  background-color: #194880;
-  color: #fff;
-  line-height: 20px;
-}
 .tip-title,
 .recipe-title{
   width: 100%;
@@ -733,7 +736,7 @@ code {
 }
 .tip-title{ background-color: #0098ff; }
 .tip-title a,
-.recipe-title a,{
+.recipe-title a{
   color: #fff;
   font-family: 'bemioregular';
   text-transform: uppercase;
@@ -839,7 +842,7 @@ code {
   padding: 10px;
 }
 /*/////////////////*/
-.chefs .seccion .pleca {
+/*.chefs .seccion .pleca {
   text-align: center;
   display: table;
   bottom: 0;
@@ -847,7 +850,7 @@ code {
   width: 100%;
   vertical-align: middle;
   height: 90px;
-}
+}*/
 .chefs .seccion{
 	height: 375px;
 	background: red;
@@ -878,7 +881,8 @@ code {
 }
 .chefs .col-md-4.seccion .pleca h1{
 	color:#fff;
-	padding: 10px;
+	padding: 0;
+  margin: 0;
 }
 .descripcionChef h3{
 	font-family: 'blackjackregular';
@@ -888,8 +892,9 @@ code {
 .descripcionChef {
   background-color: #00adef;
   color: #fff;
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .chef-grid:nth-child(even) .descripcionChef{ background-color: #003a60; }
 button.close-chef {
@@ -949,11 +954,16 @@ button.close-chef {
 }
 .producto .seccion{
 	height: 375px;
-	background: red;
 }
 .producto .seccion.imagenProcucto{
-	height: 700px;
-	background: blue;
+	height: 750px;
+  padding: 10px;
+  font-family: 'blackjackregular';
+  color: #184981;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 35px 20px;
+  text-shadow: 0px 0px 9px white;
 }
 .producto .contenedor{
 	padding: 0px;
@@ -974,10 +984,12 @@ button.close-chef {
   width: 100%;
   padding: 10px;
 }
-.producto .col-md-8 .seccion{
-	padding: 0px;
-	bottom: 0px;
-	/*background: green;*/
+.producto .col-md-8 .seccion {
+  padding: 0px;
+  bottom: 0px;
+  background-color: #d2cccc;
+  background-size: cover;
+  background-position: center center;
 }
 .producto .seccion .pleca{
 	font-size: 10px;
@@ -993,6 +1005,37 @@ button.close-chef {
   position: absolute;
   right: 0;
   width: 100px;
+  background-color: rgb(1, 66, 130);
+  color: white;
+  text-align: center;
+}
+#container-caracteristicas ul{
+  padding: 0;
+  margin: 0;
+}
+#container-caracteristicas li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+#container-caracteristicas li > img{
+  position: absolute;
+  left: 0;
+  top: 11px;
+}
+#container-caracteristicas p{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  margin: 0;
 }
 #table-tip-recipe{
   margin: 0;
@@ -1098,4 +1141,9 @@ button.close-chef {
   width:100%;
     height: 100%;
   height:calc(100% - 0px);
+}
+.img-hidden{
+ opacity:0;
+ filter: Alpha(opacity=0);
+ height: 10px;
 }
