@@ -16,7 +16,7 @@ Template Name Posts: receta
     <div class="col-md-6 text-center">
       <h1 class="bemio" id="title-header-recipes-tips">Recetas <span class="bjack">y Tips</span></h1></div>
       <div class="col-md-3">
-        <button class="btn form-control btn-info text-right">Regresar a Resultadosd </button>
+        <button class="btn form-control btn-info text-right">Regresar a Resultados</button>
       </div>
       <div class="col-xs-12 col-md-12 reset-padding">
         <div id="container-caracteristicas">
@@ -98,7 +98,7 @@ Template Name Posts: receta
         <button class="btn form-control btn-info bjack btn-bjack">Ver tips de esta receta</button>
       </div>
       <div class="col-xs-12 col-md-6 reset-padding">
-        <button onClick="FB.ui({method: 'share', href: 'http://www.developercatorcedias.com/foodservice/site/?', });" class="btn form-control btn-facebook">Compartir en facebook</button>
+        <button class="btn form-control btn-facebook share-facebook"  data-fbname='<?php the_title(); ?>' data-fbcaption='<?php the_title(); ?>' data-fbdescription='Philadelphia® Food Service tiene para ti la receta de <?php the_title(); ?>, preparada por los Chefs de nuestro Centro Gastronómico' data-fbpicture='<?php echo $imgDestacada; ?>'>Compartir en facebook</button>
       </div>
       </div>
     </div>
