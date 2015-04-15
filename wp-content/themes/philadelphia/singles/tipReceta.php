@@ -6,8 +6,6 @@ Template Name Posts: tipsRecetas
 <?php 
 	get_header();
 ?>
-tipsRecetas
-  
   
 <?php
 

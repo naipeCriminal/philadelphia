@@ -266,7 +266,7 @@ cr($fields, $errors);
 return ob_get_clean();
 }
 add_shortcode('cr', 'cr_cb');
-<<<<<<< HEAD
+
 ?>
 
 <?php
@@ -279,10 +279,12 @@ function getCantTipsReceta( $nid ){
   return $wpdb->get_var( $query, OBJECT);
 }
 
+function getContentTemplate( $post ){
+  //REFACTORIZAR CON EXPRESIONES REGULARES :-D
+  $posi = strpos("[use:",$post->post_content)+5;
+  $posf = strpos("]",$post->post_content, $posi)-1;
+  return substr($post->post_content,$posi,$posf );
+}
+
 ?>
 
-
-
-=======
-?>
->>>>>>> origin/master
