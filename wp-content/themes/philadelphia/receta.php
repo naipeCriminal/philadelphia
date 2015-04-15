@@ -35,7 +35,7 @@ Template Name Posts: receta
         </div>
         <?php global $post;$thumbID = get_post_thumbnail_id( $post->ID );$imgDestacada = wp_get_attachment_url( $thumbID );?>
         <div class="imagen" style="background-image:url(<?php echo $imgDestacada; ?>);">
-          <img src="<?php echo $imgDestacada; ?>" alt="<?php the_title(); ?>" />
+          <img src="<?php echo $imgDestacada; ?>" alt="<?php the_title(); ?>" class="img-hidden"/>
           <div class="logoPhiladelphia"></div>
         </div>
       </div>
@@ -85,6 +85,7 @@ Template Name Posts: receta
             foreach ($child_posts as $child_post) {
             ?>
             <tr>
+              <td><?php echo $child_post; ?></td>
               <td><?php echo $child_post->fields['instrucion-pasos']; ?></td>
             </tr>
             <?php
