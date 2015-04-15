@@ -45,7 +45,7 @@ var App = (function(){
 
 	function guardar(){
 		$.ajax({
-			url: 'wp-content/themes/philadelphia/assets/php/guardar.php',
+			url: '../wp-content/themes/philadelphia/assets/php/guardar.php',
 			type: 'POST',
 			data: $("#registro").serialize(),
 		})
