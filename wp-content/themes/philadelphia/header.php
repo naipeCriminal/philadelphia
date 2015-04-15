@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/print.css">
     <!-- <link rel="stylesheet" href="<?php #bloginfo('template_url'); ?>/assets/css/animate.css"> -->
-
-    <?php 
-      global $post;
-      //print_r($post);
-      if($post->post_type =="receta"){ 
-        $thumbID = get_post_thumbnail_id( $post->ID );
-        $imgDestacada = wp_get_attachment_url( $thumbID );
-        
-        $ogTitle = $post->post_title;
-        $ogDescription = "Philadelphia® Food Service tiene para ti la receta de ".$post->title.", preparada por los Chefs de nuestro Centro Gastronómico";
-        $ogUrl = $post->guid;
-        $ogImage = $imgDestacada;
+    <?php
+    global $post;
+    //print_r($post);
+    if($post->post_type =="receta"){
+    $thumbID = get_post_thumbnail_id( $post->ID );
+    $imgDestacada = wp_get_attachment_url( $thumbID );
+    
+    $ogTitle = $post->post_title;
+    $ogDescription = "Philadelphia® Food Service tiene para ti la receta de ".$post->title.", preparada por los Chefs de nuestro Centro Gastronómico";
+    $ogUrl = $post->guid;
+    $ogImage = $imgDestacada;
     ?>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $ogTitle ?>">
@@ -30,7 +29,6 @@
     <meta property="og:description" content="<?= $ogDescription ?>">
     <meta property="og:image" content="<?= $ogImage ?>">
     <?php } ?>
-
     <?php wp_head(); ?>
   </head>
   <body>
@@ -58,26 +56,26 @@
                   <a href="?page_id=293">CENTRO GASTRONÓMICO</a>
                 </li>
                 <li>
-                    <a href="?page_id=317">CASOS DE ÉXITO</a>
+                  <a href="?page_id=317">CASOS DE ÉXITO</a>
                 </li>
                 <li>
-                    <a href="?page_id=310">PRODUCTO</a>
+                  <a href="?page_id=310">PRODUCTO</a>
                 </li>
                 <li>
-                    <a href="?page_id=390">CONTACTO</a>
+                  <a href="?page_id=390">CONTACTO</a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/philadelphiamx" target="_blank">SÍGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
+                  <a href="https://www.facebook.com/philadelphiamx" target="_blank">SÍGUENOS EN <img src="<?php bloginfo('template_url'); ?>/assets/img/fb-icon.png" alt=""></a>
                 </li>
                 <li class="salir">
-                  <?php 
-                    global $current_user;
-                    if ( is_user_logged_in() ) {
+                  <?php
+                  global $current_user;
+                  if ( is_user_logged_in() ) {
                   ?>
-                    <a href="<?php echo wp_logout_url(); ?>">Salir</a>
-                    <p>¡Hola <?= $current_user->user_login; ?>!</p>
-                   <?php } else { ?> 
-                    <a href="?page_id=397">REGISTRO / INGRESO</a>
+                  <a href="<?php echo wp_logout_url(); ?>">Salir</a>
+                  <p>¡Hola <?= $current_user->user_login; ?>!</p>
+                  <?php } else { ?>
+                  <a href="?page_id=397">REGISTRO / INGRESO</a>
                   <?php } ?>
                 </li>
               </ul>
