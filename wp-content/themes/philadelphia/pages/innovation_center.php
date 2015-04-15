@@ -6,7 +6,7 @@
             // = new WP_Query(array( 'post_type' => array( 'receta', 'tips'), 'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) ); 
   
 
-  $args = array('showposts'=>-1,'orderby'=>'rand', 'post_type'=>array('professional-innovat','the-ingredent-hunter','ingrediente-hot','philly-hunter','sweet-report','cocina-salud','cobertura-de-cursos'));
+  $args = array('showposts'=>-1,'orderby'=>'rand', 'post_type'=>array('new-and-tasty','el-ingrediente-hot','philly-trends','sweet-reports','cocina-salud','philly-lab','cobertura-de-cursos'));
   $query = new WP_Query($args);
    if ( have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
   <?php 

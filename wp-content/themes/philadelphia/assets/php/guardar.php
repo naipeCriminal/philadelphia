@@ -1,5 +1,4 @@
 <?php
-require_once("config.php");
 require_once("mail.php");
 $emailValido=0;
 // print_r($_POST);
@@ -40,15 +39,15 @@ if($nombres=="" or $email==""  or $emailValido==0 or $telefono=="" or $estado=="
 	    $mail->SMTPAuth = true;
 	    $mail->Username = "developer@catorcedias.com";
 	    $mail->Password = "CFz8ZKAWPfW6";
-	    $mail->From = "consumidor@conmx.jnj.com";
-	    $mail->FromName = "consumidor@conmx.jnj.com";
-	    $email=$_POST['email'];
-	    $mail->AddAddress($_POST['email']);
+	    $mail->From = "developercatorcedias@catorcedias.com";
+	    $mail->FromName = "developercatorcedias@catorcedias.com";
+	    $email="developercatorcedias@catorcedias.com";
+	    $mail->AddAddress('developercatorcedias@catorcedias.com');
 	    $mail->AddBCC("consumidor@conmx.jnj.com");
 	    $mail->IsHTML(true);
 	    $mail->Subject = "NewsLetter";
 
-	    $mail->Body = "<img src='http://www.developercatorcedias.com/splendaNew/SPLENDA_mailing_newsletter.jpg' alt='¡Felicidades! ya formas parte del selecto grupo de SPLENDA®. Espera las grandes sorpresas que tenemos para ti' style='position:absolute;'/>";
+	    $mail->Body = "Nos han enviado un correo electronico";
 	    $mail->AltBody = "";
 	    //Si al enviar el correo devuelve true es que todo ha ido bien.
 	    if($mail->Send())
