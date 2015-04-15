@@ -1156,3 +1156,32 @@ button.close-chef {
  filter: Alpha(opacity=0);
  height: 10px;
 }
+.logoDePost{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  right: 10px;
+  background: #000;
+}
+.new-and-tasty{
+  background: url(../img/cat/sello_newandtasy.png);
+}
+.el-ingrediente-hot{
+  background: url(../img/cat/sello_el_ingredienta_hot.png);
+}
+.philly-trends{
+  background: url(../img/cat/sello_philly_trends.png);
+}
+.sweet-reports{
+  background: url(../img/cat/sello_sweet_report.png);
+}
+.cocina-salud{
+  background: url(../img/cat/sello_cocina_salud.png);
+}
+.philly-lab{
+  background: url(../img/cat/sello_philly_lab.png);
+}
+.cobertura-de-cursos{
+  background: url(../img/cat/.png);
+}
