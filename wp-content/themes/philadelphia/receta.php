@@ -17,23 +17,23 @@
           <ul>
             <li>
               <img src="wp-content/themes/philadelphia/assets/img/recetas-tiempo.jpg" />
-              <span><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?></span>
+              <p><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?></p>
             </li>
             <li>
               <img src="wp-content/themes/philadelphia/assets/img/recetas-tiempo-dehorneado.jpg" />
-              <span><?php echo( types_render_field("tiempo-de-preparacion",array('row'=>true))); ?></span>
+              <p><?php echo( types_render_field("tiempo-de-preparacion",array('row'=>true))); ?></p>
             </li>
             <li>
               <img src="wp-content/themes/philadelphia/assets/img/recetas-rinde.jpg" />
-              <span><?php echo( types_render_field("porciones",array('row'=>true))); ?></span>
+              <p><?php echo( types_render_field("porciones",array('row'=>true))); ?></p>
             </li>
             <li>
               <img src="wp-content/themes/philadelphia/assets/img/recetas-categoria.jpg" />
-              <span><?php echo( types_render_field("categoria",array('row'=>true))); ?></span>
+              <p><?php echo( types_render_field("categoria",array('row'=>true))); ?></p>
             </li>
             <li>
               <img src="wp-content/themes/philadelphia/assets/img/recetas-tiempo-refrigeracion.jpg" />
-              <span><?php echo( types_render_field("tiempo-de-refrigeracion",array('row'=>true))); ?></span>
+              <p><?php echo( types_render_field("tiempo-de-refrigeracion",array('row'=>true))); ?></p>
             </li>
           </ul>
 
@@ -85,26 +85,29 @@
               </tr>
             </thead> -->
             <tbody>
-           <?php
-           $child_posts = types_child_posts('paso');
-           foreach ($child_posts as $child_post) {
-           ?>
-           <tr>
-             <td><?php echo $child_post->fields['orden-pasos']; ?> </td>
-             <td><?php echo $child_post->fields['glosario']; ?> </td>
-             <td><?php echo $child_post->fields['instrucion-pasos']; ?> </td>
-           </tr>
-           <?php
-           }
-           ?>
+
+            <?php
+            $child_posts = types_child_posts('paso');
+            foreach ($child_posts as $child_post) {
+            ?>
+            <tr>
+              <td><?php echo $child_post->fields['orden-pasos']; ?> </td>
+              <td><?php echo $child_post->fields['glosario']; ?> </td>
+              <td><?php echo $child_post->fields['instrucion-pasos']; ?> </td>
+            </tr>
+            <?php
+            }
+            ?>
 
             </tbody>
           </table>
         </div>
       <?php endwhile; else: endif; ?>
+      <?php global $post; if( getCantTipsReceta($post->ID) > 0){ ?>
       <div class="col-xs-12 col-md-6 reset-padding">
         <button class="btn form-control btn-info bjack btn-bjack" id="btn-ver-tips-receta">Ver tips de esta receta</button>
       </div>
+      <?php } ?>
       <div class="col-xs-12 col-md-6 reset-padding">
         <button class="btn form-control btn-facebook share-facebook"  data-fbname='<?php the_title(); ?>' data-fbcaption='<?php the_title(); ?>' data-fbdescription='Philadelphia® Food Service tiene para ti la receta de <?php the_title(); ?>, preparada por los Chefs de nuestro Centro Gastronómico' data-fbpicture='<?php echo $imgDestacada; ?>'>Compartir en facebook</button>
       </div>

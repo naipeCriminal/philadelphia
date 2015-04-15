@@ -4,68 +4,99 @@
       <h1><span style="color: #1a477e; font-size: 35px;">Centro Gastronómico Mondeléz</span></h1>
     </div>
     <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-rodrigo.jpg'); background-size: cover; background-position: center center;">
-      <a href="#rodrigoZepeda" data-toggle="modal">
-        <div class="pleca">
-          <div class="descripcionChef">
-            <h1>RODRIGO ZEPEDA</h1>
-            <h3>Corporative Chef</h3>
-          </div>
+      <div class="table">
+        <div class="cell-bottom">
+          <a href="#rodrigoZepeda" data-toggle="modal">
+            <div class="pleca">
+              <div class="descripcionChef">
+                <h1>RODRIGO ZEPEDA</h1>
+                <h3>Corporative Chef</h3>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-karlaferrer.jpg'); background-size: cover; background-position: center center;">
-      <a href="#karlaF" data-toggle="modal">
-        <div class="pleca">
-          <div class="descripcionChef">
-            <h1>KARLA FERRER</h1>
-            <h3>Chef Jr.</h3>
-          </div>
+      <div class="table">
+        <div class="cell-bottom">
+          <a href="#karlaF" data-toggle="modal">
+            <div class="pleca">
+              <div class="descripcionChef">
+                <h1>KARLA FERRER</h1>
+                <h3>Chef Jr.</h3>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-marcos.jpg');">
-      <a href="#marcosV" data-toggle="modal">
-        <div class="pleca">
-          <div class="descripcionChef">
-            <h1>MARCOS VALADEZ</h1>
-            <h3>Chef Jr.</h3>
-          </div>
+      <div class="table">
+        <div class="cell-bottom">
+          <a href="#marcosV" data-toggle="modal">
+            <div class="pleca">
+              <div class="descripcionChef">
+                <h1>MARCOS VALADEZ</h1>
+                <h3>Chef Jr.</h3>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-astrid.jpg'); background-size: cover; background-position: center center;">
-      <a href="#astridB" data-toggle="modal">
-        <div class="pleca">
-          <div class="descripcionChef">
-            <h1>ASTRID BENÍTEZ</h1>
-            <h3>Chef Jr.</h3>
-          </div>
+      <div class="table">
+        <div class="cell-bottom">
+          <a href="#astridB" data-toggle="modal">
+            <div class="pleca">
+              <div class="descripcionChef">
+                <h1>ASTRID BENÍTEZ</h1>
+                <h3>Chef Jr.</h3>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-xs-12 col-md-4 seccion" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-quees.jpg'); background-size: cover; background-position: center center;">
-      <a href="?page_id=301">
-        <div class="pleca">
-          <h1 class="bemio">
-            ¿QUÉ ES EL <br>
-            <span class="bjack">Centro Gastronómico?</span>
-          </h1>
+      <div class="table">
+        <div class="cell-center">
+          <a href="?page_id=301">
+            <div class="pleca">
+              <div class="table">
+                <div class="cell-center">
+                  <h1 class="bemio">¿QUÉ ES EL <br><span class="bjack">Centro Gastronómico?</span></h1>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-xs-12 col-md-4 seccion" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-ubicacion.jpg'); background-size: cover; background-position: center center;">
-      <a href="?page_id=304">
-        <div class="pleca">
-          <h1 class="bemio">UBICACIÓN</h1>
+      <div class="table">
+        <div class="cell-center">
+          <a href="?page_id=304">
+            <h1 class="bemio">UBICACIÓN</h1>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col-xs-12 col-md-4 seccion" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-noticias.jpg'); background-size: cover; background-position: center center;">
-      <a href="?page_id=469">
-        <div class="pleca">
-          <h1 class="bemio"><a href="?page_id=469">NOTICIAS</a></h1>
+      <div class="table">
+        <div class="cell-center">
+          <a href="?page_id=469">
+            <div class="pleca">
+              <div class="table">
+                <div class="cell-center">
+                  <h1 class="bemio"><a href="?page_id=469">NOTICIAS</a></h1>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </div>

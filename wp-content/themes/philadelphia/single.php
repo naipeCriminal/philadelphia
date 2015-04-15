@@ -3,10 +3,20 @@
   <?php 
   global $post;
    
-  if( $post->post_type == "cobertura-de-cursos" ){
+  if( $post->post_type == "cobertura-de-cursos" ||  
+      $post->post_type == "sweet-report" || 
+      $post->post_type == "cocina-salud" ||
+      $post->post_type == "cobertura-de-cursos" ||
+      $post->post_type == "new-and-tasty" ||
+      $post->post_type == "el-ingrediente-hot" ||
+      $post->post_type == "philly-trends" ||
+      $post->post_type == "sweet-reports" ||
+      $post->post_type == "philly-lab"){
     include("innovation.php");
   }else if( $post->post_type == "noticia" ){
     include("noticia.php");
+   }else if( $post->post_type == "receta" ){
+    include("receta.php");
   }else{
   ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 

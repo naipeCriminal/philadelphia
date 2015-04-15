@@ -1,0 +1,4 @@
+
+export domainname=www.philadelphia.com.mx
+export httpdconfdir=/etc/apache2
+

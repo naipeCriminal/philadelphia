@@ -282,3 +282,17 @@ function cr_cb() {
 add_shortcode('cr', 'cr_cb');
 ?>
 
+<?php
+//CUSTOM FUNCTIONS PHILY
+
+function getCantTipsReceta( $nid ){
+  //Devuelve la cantidad de tips de la receta
+  global $wpdb;
+  $query = "SELECT count(*) FROM wp_postmeta as pm WHERE pm.meta_key='_wpcf_belongs_tip_philadelphia_id' AND pm.meta_value == ".$id;
+  return $wpdb->get_var( $query, OBJECT);
+}
+
+?>
+
+
+
