@@ -220,7 +220,38 @@ body, html{
 label:hover:before {
   border: 1px solid #4778d9!important;
 }
-
+#container-contact-form{
+  background-color: #004a80;
+  color: #fff;
+  position: relative;
+}
+#container-registro,
+#container-login-form{
+  float: left;
+  width: 100%;
+  background-color: #0097fe;
+  color: #fff;
+}
+#container-registro{
+  background-color: #014a81;
+}
+#container-registro-login h1.bjack{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+#container-registro-login h1{
+  margin: 0;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+#container-login-form p{
+  color: white;
+}
+#loginform{
+  position: relative;
+  top: 45px;
+}
 .pleca,
 .pleca a{
   color: #fff;
