@@ -59,7 +59,7 @@ $cats[] = $term->term_id;
   </div>
   <div class="row ourHolder">
     <?php
-    //Start the Loop  
+    //Start the Loop
     //$values=array('0');
     //if ( is_user_logged_in() ) $values=array('0','1');
     //$wpbp = new WP_Query(array( 'post_type' => array( 'receta', 'tips'),'meta_query'=>array(array('key'=>'wpcf-premium','value'=>$values,'compare'=>'IN')) , 'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) );
@@ -76,7 +76,8 @@ $cats[] = $term->term_id;
     <div class="col-xs-12 col-md-4 square-recipe" data-id="id-<?php echo $count; ?>" data-type="<?php foreach ($types as $type) { echo $type->slug. ' '; }?>">
       <div class="view">
         <div class="thumbnail" style="background-image: url(<?php echo($imgDestacada); ?>)">
-          <?php #the_post_thumbnail(); ?>
+          <?php if ($premium==true) { echo('<div class="premium"></div>');} ?><?php $posType= get_post_type( $post );echo $posType; ?>
+
           <div class="recipe-title">
             <div class="table">
               <div class="cell-center">
