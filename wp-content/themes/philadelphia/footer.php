@@ -11,7 +11,7 @@
 			<li><a href="#pregunta" role="button" data-toggle="modal">Preguntas frecuentes</a></li>
 			<li><a href="#politica" role="button" data-toggle="modal">Políticas de privacidad y términos de uso.</a></li>
 			<li><a href="#legal" role="button" data-toggle="modal">Aviso Legal</a></li>
-			<li>Derechos Reservados 2015 Mondeléz México, S de R.L.de C.V.</li>
+			<li>Derechos Reservados 2014 Mondeléz México, S de R.L.de C.V.</li>
 		</ul>
 	</div>
 </div>

@@ -76,24 +76,25 @@ $cats[] = $term->term_id;
     ?>
     <div class="col-xs-12 col-md-4 square-recipe" data-id="id-<?php echo $count; ?>" data-type="<?php foreach ($types as $type) { echo $type->slug. ' '; }?>">
       <div class="view">
-        <div class="thumbnail" style="background-image: url(<?php echo($imgDestacada); ?>)">
-          <?php if ($premium==true) { echo('<div class="premium"></div>');} ?>
-          
-          <div class="<?php if ($posType=='tip-philadelphia') {echo 'tip-title';}else{echo 'recipe-title';} ?>">
-            <div class="table">
-              <div class="cell-center">
-                <a href="<?php the_permalink(); ?>?type=<?php foreach ($types as $type) { echo $type->slug. ' '; }?>" title="<?php the_title_attribute(); ?>" ><?php echo get_the_title(); ?></a>
+        <a href="<?php the_permalink(); ?>?type=<?php foreach ($types as $type) { echo $type->slug. ' '; }?>" title="<?php the_title_attribute(); ?>" >
+          <div class="thumbnail" style="background-image: url(<?php echo($imgDestacada); ?>)">
+            <?php if ($premium==true) { echo('<div class="premium"></div>');} ?>
+            <div class="<?php if ($posType=='tip-philadelphia') {echo 'tip-title';}else{echo 'recipe-title';} ?>">
+              <div class="table">
+                <div class="cell-center">
+                  <h3 class="bemio"><?php echo get_the_title(); ?></h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <?php } ?>
     <?php $count++; // Increase the count by 1 ?>
     <?php endwhile; ?>
     <?php endif;// END the Wordpress Loop ?>
-    <?php wp_reset_query(); // Reset the Query Loop?>    
+    <?php wp_reset_query(); // Reset the Query Loop?>
   </div>
 </div>
 </div>

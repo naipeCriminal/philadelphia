@@ -42,28 +42,32 @@ wp_reset_postdata();
 ?>
 <?php
 function cr(&$fields, &$errors) {
-// Check args and replace if necessary
-if (!is_array($fields))     $fields = array();
-if (!is_wp_error($errors))  $errors = new WP_Error;
-// Check for form submit
-if (isset($_POST['submit'])) {
-// Get fields from submitted form
-$fields = cr_get_fields();
-// Validate fields and produce errors
-if (cr_validate($fields, $errors)) {
-// If successful, register user
-wp_insert_user($fields);
-// And display a message
-echo 'Registration complete. Goto <a href="' . get_site_url() . '/wp-login.php">login page</a>.';
-// Clear field data
-$fields = array();
+  // Check args and replace if necessary
+  if (!is_array($fields))     $fields = array();
+  if (!is_wp_error($errors))  $errors = new WP_Error;
+  // Check for form submit
+  if (isset($_POST['submit'])) {
+    // Get fields from submitted form
+    $fields = cr_get_fields();
+    // Validate fields and produce errors
+    if (cr_validate($fields, $errors)) {
+      // If successful, register user
+      wp_insert_user($fields);
+
+      // And display a message
+      $errors->add('field','¡El registro se ha completado con éxito!');
+
+      // Clear field data
+      $fields = array();
+      exit;      
+    }
+  }
+  // Santitize fields
+  cr_sanitize($fields);
+  // Generate form
+  cr_display_form($fields, $errors);
 }
-}
-// Santitize fields
-cr_sanitize($fields);
-// Generate form
-cr_display_form($fields, $errors);
-}
+
 function cr_sanitize(&$fields) {
 $fields['user_login']   =  isset($fields['user_login'])  ? sanitize_user($fields['user_login']) : '';
 $fields['user_pass']    =  isset($fields['user_pass'])   ? esc_attr($fields['user_pass']) : '';
@@ -82,23 +86,6 @@ $fields['estado']     =  isset($fields['estado'])    ? sanitize_text_field($fiel
 $fields['cp']     =  isset($fields['cp'])    ? sanitize_text_field($fields['cp']) : '';
 }
 function cr_display_form($fields = array(), $errors = null) {
-// Check for wp error obj and see if it has any errors
-if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
-// Display errors
-?>
-<div class="safe-container">
-<div class="alert alert-danger">
-  <ul><?php
-  foreach ($errors->get_error_messages() as $key => $val) {
-  ?><li>
-    <?php echo $val; ?>
-  </li><?php
-  }
-?></ul>
-</div>
-</div><?php
-}
-// Disaply form
 ?>
 <div class="container">
   <div class="row">
@@ -107,7 +94,40 @@ if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
     </div>
   </div>
 </div>
+  <?php
+//Errores del formulario de registro
+// Check for wp error obj and see if it has any errors
+if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
+// Display errors
+?>
 <div class="safe-container" id="container-registro-login">
+<div class="alert alert-danger">
+  <ul><?php
+    foreach ($errors->get_error_messages() as $key => $val) {
+    ?><li>
+      <?php echo $val; ?>
+    </li><?php
+    }
+  ?></ul>
+</div>
+</div>
+
+<?php
+}
+// Disaply form
+
+//errores del formulario de login
+$page_showing = basename($_SERVER['REQUEST_URI']);
+if (strpos($page_showing, 'failed') !== false) {
+echo '<ul><li>Nombre de usuario o contraseña inválidos.</li></ul>';
+}
+elseif (strpos($page_showing, 'blank') !== false ) {
+echo '<ul><li>Los campos no pueden ser vacios.</li></ul>';
+}
+
+?>
+
+
     <div id="container-login-form">
       <div class="col-md-4 text-center">
         <form name="loginform" id="loginform" action="<?php echo get_option('home'); ?>/wp-login.php" method="post">
@@ -115,8 +135,8 @@ if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
           <h1 class="upercase bemio">Tu cuenta</h1>
           <div class="table">
             <div class="cell-center text-left">
-              <p><input type="text" name="log" id="user_login" class="form-control" value="" size="20" tabindex="10" /></p>
-              <p><input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" tabindex="20" /></p>
+              <p><input type="text" name="log" id="user_login" class="form-control" value="" size="20" tabindex="10" placeholder="USUARIO O CORREO*"/></p>
+              <p><input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20" tabindex="20"  placeholder="CONTRASEÑA*"/></p>
               <p class="submit text-right">
                 <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-default" value="Ingresar" tabindex="100" />
                 <input type="hidden" name="redirect_to" value="<?php echo get_option('home'); ?>/index.php" />
@@ -135,7 +155,7 @@ if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
         <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-login-bottom.jpg" alt="" width="100%">
       </div>
       <div class="col-md-8 text-center">
-        <form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
+        <form action="<?php bloginfo('url'); ?>/registro" method="post">
           <h1 class="bjack">Crea</h1>
           <h1 class="upercase bemio">Tu cuenta</h1>
           <p>
@@ -179,16 +199,16 @@ if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
                 <input type="text" class="form-control" placeholder="TIPO DE EMPRESA" name="tipoempresa" value="<?php echo (isset($fields['tipoempresa']) ? $fields['tipoempresa'] : '') ?>">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="DIRECCIÓN DE LA EMPRESA 1*" name="dirempresa1" value="<?php echo (isset($fields['dirempresa1']) ? $fields['dirempresa1'] : '') ?>">
+                <input type="text" class="form-control" placeholder="DIRECCIÓN DE LA EMPRESA 1" name="dirempresa1" value="<?php echo (isset($fields['dirempresa1']) ? $fields['dirempresa1'] : '') ?>">
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="DIRECCIÓN DE LA EMPRESA 2" name="dirempresa2" value="<?php echo (isset($fields['dirempresa2']) ? $fields['dirempresa2'] : '') ?>">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="CIUDAD*" name="ciudad" value="<?php echo (isset($fields['ciudad']) ? $fields['ciudad'] : '') ?>">
+                <input type="text" class="form-control" placeholder="CIUDAD" name="ciudad" value="<?php echo (isset($fields['ciudad']) ? $fields['ciudad'] : '') ?>">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="ESTADO*" name="estado" value="<?php echo (isset($fields['estado']) ? $fields['estado'] : '') ?>">
+                <input type="text" class="form-control" placeholder="ESTADO" name="estado" value="<?php echo (isset($fields['estado']) ? $fields['estado'] : '') ?>">
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="CODIGO POSTAL" name="cp" value="<?php echo (isset($fields['cp']) ? $fields['cp'] : '') ?>">
@@ -230,24 +250,24 @@ function cr_validate(&$fields, &$errors) {
 if (!is_wp_error($errors))  $errors = new WP_Error;
 // Validate form data
 if (empty($fields['user_login']) || empty($fields['user_pass']) || empty($fields['user_email'])) {
-$errors->add('field', 'Required form field is missing');
+$errors->add('field', 'Los campos requeridos no pueden ser vacios.');
 }
 if (strlen($fields['user_login']) < 4) {
-$errors->add('username_length', 'Username too short. At least 4 characters is required');
+$errors->add('username_length', 'Nombre de usuario muy corto. Debe contener al menos 4 caracteres.');
 }
 if (username_exists($fields['user_login']))
-$errors->add('user_name', 'Sorry, that username already exists!');
+$errors->add('user_name', 'El nombre de usuario ya existe');
 if (!validate_username($fields['user_login'])) {
-$errors->add('username_invalid', 'Sorry, the username you entered is not valid');
+$errors->add('username_invalid', 'El nombre de usuario no es válido');
 }
 if (strlen($fields['user_pass']) < 5) {
-$errors->add('user_pass', 'Password length must be greater than 5');
+$errors->add('user_pass', 'La contraseña debe tener mas de 5 caracteres.');
 }
 if (!is_email($fields['user_email'])) {
-$errors->add('email_invalid', 'Email is not valid');
+$errors->add('email_invalid', 'El correo no es válido.');
 }
 if (email_exists($fields['user_email'])) {
-$errors->add('email', 'Email Already in use');
+$errors->add('email', 'El correo ya existe.');
 }
 // If errors were produced, fail
 if (count($errors->get_error_messages()) > 0) {
@@ -274,12 +294,11 @@ add_shortcode('cr', 'cr_cb');
 
 
 //CUSTOM FUNCTIONS PHILY
-
 function getCantTipsReceta( $nid ){
   //Devuelve la cantidad de tips de la receta
   global $wpdb;
-  $query = "SELECT count(*) FROM wp_postmeta as pm WHERE pm.meta_key='_wpcf_belongs_tip_philadelphia_id' AND pm.meta_value == ".$id;
-  return $wpdb->get_var( $query, OBJECT);
+  $query = "SELECT count(*) FROM wp_posts as p, wp_postmeta as pm WHERE p.ID = pm.post_id AND p.post_type ='receta-tip' AND pm.meta_key='_wpcf_belongs_receta_id' AND pm.meta_value = ".$nid;
+  return $wpdb->get_var( $query);
 }
 
 function getContentTemplate( $post ){
@@ -293,6 +312,42 @@ function getContentTemplate( $post ){
     return "";
   }
 }
+
+//Cambiando las redirecciones del formulario de login
+$page_id = "";
+$product_pages_args = array(
+'meta_key' => '_wp_page_template',
+'meta_value' => 'login.php'
+);
+
+$product_pages = get_pages( $product_pages_args );
+foreach ( $product_pages as $product_page ) {
+$page_id.= $product_page->ID;
+}
+function login_failed() {
+  global $page_id;
+  wp_redirect( get_bloginfo('url').'/registro?login=failed' );
+  exit;
+}
+add_action( 'wp_login_failed', 'login_failed' );
+
+function blank_username_password( $user, $username, $password ) {
+  global $page_id;
+  if( $username == "" || $password == "" ) {
+    wp_redirect( get_bloginfo('url').'/registro?login=blank' );
+    exit;
+  }
+}
+add_filter( 'authenticate', 'blank_username_password', 1, 3);
+
+function logout_page() {
+  global $page_id;
+  wp_redirect( home_url( '/' ) . "&login=false" );
+  exit;
+}
+add_action('wp_logout', 'logout_page');
+
+
 
 ?>
 

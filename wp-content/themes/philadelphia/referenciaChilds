@@ -1,0 +1,27 @@
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+   	<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2> 
+<?php 
+	echo( types_render_field("tiempo-de-horneado",array('row'=>true))."<br>");
+	echo( types_render_field("porciones", array('row' => true))."<br>");
+?>
+<!-- posteos hijo -->
+<?php 
+	$child_posts = types_child_posts('ing');
+	foreach ($child_posts as $child_post) {
+	  echo $child_post->post_title;
+	  echo $child_post->fields['nombre']."<br>";
+	  echo $child_post->fields['grupo']."<br>";	  
+	  echo $child_post->fields['cantidad']."<br>";	  
+	}
+ ?>
+
+ <?php 
+	$child_posts = types_child_posts('paso');
+	foreach ($child_posts as $child_post) {
+	  // echo $child_post->post_title;
+	  echo $child_post->fields['instrucion-pasos']."<br>";
+	}
+ ?>
+<?php the_content(); ?> 
+
+<?php endwhile; else: endif; ?> <h2>No encontrado</h2> <p>Lo sentimos, intente utilizar nuestro formulario de b&uacute;squedas.</p> <?php endif; ?> 
