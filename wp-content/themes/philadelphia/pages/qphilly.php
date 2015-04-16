@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row text-center">
-    <h1 class="bemio" style="color: #1a477e; font-size: 35px;">CONTACTÁNOS</h1>
+    <h1 class="bemio" style="color: #1a477e; font-size: 35px;">QUIERO PHILLY</h1>
   </div>
 </div>
 <div class="safe-container" id="container-contact-form">
