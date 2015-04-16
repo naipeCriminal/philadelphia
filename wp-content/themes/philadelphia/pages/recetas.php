@@ -11,43 +11,40 @@ $cats[] = $term->term_id;
 ?>
 <!-- esto se puede borrar -->
 <div class="container" id="filter-recipes">
+
   <div class="row">
     <div class="col-md-offset-2 col-md-4">
       <h1 class="bemio">Personaliza los resultados eligiendo que quieres ver</h1>
     </div>
-    <!-- <div class="col-md-2">
-      <div class="checkbox" data-filtro="all">
-        <span>TODO</span>
-        <input type="checkbox" value="None" name="check" checked />
-        <label for="P"></label>
-      </div>
-    </div> -->
-    <div class="col-md-2">
-      <div class="checkbox" data-filtro="panaderia">
-        <span>PANADERÍA</span>
-        <input type="checkbox" value="None" name="check" checked />
-        <label for="P"></label>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="checkbox" data-filtro="hoteles-y-restaurantes">
-        <span>HOTELES </span>
-        <br>
-        <span>Y RESTAURANTES</span>
-        <input type="checkbox" value="None" id="HOTELES-Y-RESTAURANTES" name="check" checked />
-        <label for="p"></label>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="checkbox" data-filtro="pasteleria-y-cafeteria">
-        <span class="pasteleria-y-cafeteria">CAFÉS Y PASTELERÍA</span>
-        <input type="checkbox" value="None"  name="check" checked />
-        <label for="p"></label>
+    <div class="col-md-6 text-center">
+      <div class="table">
+        <div class="cell-center">
+          <div class="checkbox text-right" data-filtro="all">
+            <h3>TODO</h3>
+            <input type="checkbox" class="input-checkbox" value="None" name="check" checked />
+            <label for="P"></label>
+          </div>
+          
+          <div class="checkbox text-right" data-filtro="panaderia">
+            <h3>PANADERÍA</h3>
+            <input type="checkbox" class="input-checkbox" value="None" name="check"/>
+            <label for="P"></label>
+          </div>
+          
+          <div class="checkbox text-right" data-filtro="hoteles-y-restaurantes">
+            <h3>HOTELES Y RESTAURANTES</h3>
+            <input type="checkbox" class="input-checkbox" value="None" id="HOTELES-Y-RESTAURANTES" name="check"/>
+            <label for="p"></label>
+          </div>
+          <div class="checkbox text-right" data-filtro="pasteleria-y-cafeteria">
+            <h3 class="pasteleria-y-cafeteria">CAFÉS Y PASTELERÍA</h3>
+            <input type="checkbox" class="input-checkbox" value="None"  name="check"/>
+            <label for="p"></label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="safe-container">
   <div class="row">
     <div id="header-tips-recipes" class="col-md-12">
       <div class="table">
@@ -57,6 +54,8 @@ $cats[] = $term->term_id;
       </div>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row ourHolder">
     <?php
     //Start the Loop
@@ -75,20 +74,20 @@ $cats[] = $term->term_id;
     if ( is_user_logged_in() || (!is_user_logged_in() && !$premium) ){
     ?>
     <div class="col-xs-12 col-md-4 square-recipe" data-id="id-<?php echo $count; ?>" data-type="<?php foreach ($types as $type) { echo $type->slug. ' '; }?>">
-      <div class="view">
-        <a href="<?php the_permalink(); ?>?type=<?php foreach ($types as $type) { echo $type->slug. ' '; }?>" title="<?php the_title_attribute(); ?>" >
-          <div class="thumbnail" style="background-image: url(<?php echo($imgDestacada); ?>)">
-            <?php if ($premium==true) { echo('<div class="premium"></div>');} ?>
-            <div class="<?php if ($posType=='tip-philadelphia') {echo 'tip-title';}else{echo 'recipe-title';} ?>">
-              <div class="table">
-                <div class="cell-center">
-                  <h3 class="bemio"><?php echo get_the_title(); ?></h3>
-                </div>
+      <!-- <div class="view"> -->
+      <a href="<?php the_permalink(); ?>?type=<?php foreach ($types as $type) { echo $type->slug. ' '; }?>" title="<?php the_title_attribute(); ?>" >
+        <div class="thumbnail" style="background-image: url(<?php echo($imgDestacada); ?>)">
+          <?php if ($premium==true) { echo('<div class="premium"></div>');} ?>
+          <div class="<?php if ($posType=='tip-philadelphia') {echo 'tip-title';}else{echo 'recipe-title';} ?>">
+            <div class="table">
+              <div class="cell-center">
+                <h3 class="bemio"><?php echo get_the_title(); ?></h3>
               </div>
             </div>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
+      <!-- </div> -->
     </div>
     <?php } ?>
     <?php $count++; // Increase the count by 1 ?>

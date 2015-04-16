@@ -3,7 +3,7 @@
 		<div class="col-md-12 text-center">
 			<h1 class="bemio"  style="color:#194782;">CENTRO GASTRONÓMICO MONDELEZ</h1>
 		</div>
-		<div class="col-xs-12 col-md-8 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/homefinal-pic.jpg');">
+		<div class="col-xs-12 col-md-8 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico__quees.jpg');">
 			<div class="table">
 				<div class="cell-center">
 					<div class="pleca">
@@ -18,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-4 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/homefinal-casosexito.jpg');">
+		<div class="col-xs-12 col-md-4 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico__ubicacion.jpg');">
 			<div class="table">
 				<div class="cell-center">
 					<div class="pleca">
@@ -31,7 +31,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-4 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/homefinal-centrogastronomico.jpg');">
+		<div class="col-xs-12 col-md-4 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico__noticia.jpg');">
 			<div class="table">
 				<div class="cell-center">
 					<div class="pleca">
@@ -44,7 +44,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-8 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/homefinal-recetastips.jpg');">
+		<div class="col-xs-12 col-md-8 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico__nchefs.jpg');">
 			<div class="table">
 				<div class="cell-center">
 					<div class="pleca">

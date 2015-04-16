@@ -1,12 +1,12 @@
 <div class="safe-container">
   <div class="row ">
-    <div class="col-md-12">
+    <div class="col-md-12" style="background:#fff;">
       <h1 class="bemio" style="color: #1a477e;text-align: center;font-size: 35px;">FOOD SERVICE: ¡DALE MÁS SABOR A TU NEGOCIO!</h1>
     </div>
   </div>
   <div class="row pic">
-    <h1 class="bemio">PROFESSIONAL <br> <span class="bjack">Innovation Center</span></h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium reiciendis minus quaerat veniam alias rem consequatur repellat dolore odio accusamus, nisi officiis, maxime enim, hic expedita. Dolorum quos nemo veritatis.</p>
+    <h1 class="bemio" style="color:#194782;">PROFESSIONAL <br> <span class="bjack">Innovation Center</span></h1>
+    <p class="text-center" style="  font-size: 17px;">El Professional Innovation center es unárea de investigación, <br>orientado hacia una visión gastronómica y de negocio. <br>Está dirigido por el Centro Gastronómico Mondelez, en búsqueda de nuevos platillos, <br> ingredientes y técnicas para darte nuevas herramientas para tus creaciones.</p>
     <?php
     // = new WP_Query(array( 'post_type' => array( 'receta', 'tips'), 'category__in' => $cats, 'posts_per_page' => '-1', 'paged' => $paged) );
     

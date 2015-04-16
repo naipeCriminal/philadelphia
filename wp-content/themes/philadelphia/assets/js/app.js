@@ -97,7 +97,7 @@ var App = (function(){
 	return{
 		init: function(){
 			iniciaEventos();
-			animaMenu();
+			// animaMenu();
 			animaPost();
 
 			iniciaQuieroPhily();
