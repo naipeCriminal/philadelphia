@@ -1,7 +1,7 @@
 <div class="safe-container indexHome">
 	<div class="row ">
 		<div class="col-md-12 text-center">
-			<h1 class="bemio">CENTRO GASTRONÓMICO MONDELEZ</h1>
+			<h1 class="bemio"  style="color:#194782;">CENTRO GASTRONÓMICO MONDELEZ</h1>
 		</div>
 		<div class="col-xs-12 col-md-8 seccion" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/homefinal-pic.jpg');">
 			<div class="table">
@@ -10,7 +10,7 @@
 						<div class="table">
 							<div class="cell-center">
 								<h1 class="bemio">
-								<a href="?page_id=301">¿QUE ES EL <br><span class="bjack">centro gastronómico</span>?</a>
+								<a href="?page_id=301">¿QUÉ ES EL <br><span class="bjack">centro gastronómico</span>?</a>
 								</h1>
 							</div>
 						</div>
