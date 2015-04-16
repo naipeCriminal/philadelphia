@@ -1,3 +1,9 @@
+a:visited,
+a:active,
+a:link,
+a:hover{
+	text-decoration: none;
+}
 .container{
 	width: 100%;
 }
@@ -7,6 +13,9 @@
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
+}
+#footer .safe-container{
+	width: 1240px;
 }
 .checkbox{
 	width: 100%;

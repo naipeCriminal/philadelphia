@@ -6,14 +6,14 @@
 <div class="safe-container" id="container-contact-form">
   <div class="row qphilly">
     <div class="col-md-4 reset-padding">
-      <img src="wp-content/themes/philadelphia/assets/img/food-service-contacto-lateral.jpg" alt="" width="100%">
+      <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-contacto-lateral.jpg" alt="" width="100%">
     </div>
     <div class="col-md-8">
       <div class="row">
         <form id="registro" role="form" data-toggle="validator">
           <div class="col-md-12 text-center" style="color: white;">
             <h1 class="bjack">¡Dinos lo que piensas!</h1>
-            <p style="color: white;">En Philadelphia Food Service nos interesamucho lo que nos quieras decir. <br>Envíanos tus comentarios y nos pondremos en contacto. </p>
+            <p style="color: white;">En Philadelphia Food Service nos interesa mucho lo que nos quieras decir. <br>Envíanos tus comentarios y nos pondremos en contacto. </p>
           </div>
           <div class="col-md-6">
             <div class="col-md-12" style="padding:0px">
@@ -105,7 +105,7 @@
       </form>
     </div>
     <div class="col-md-8 reset-padding" style="position:absolute;bottom:0;right:0;">
-      <img src="wp-content/themes/philadelphia/assets/img/food-service-contacto-bottom.jpg" alt="" width="100%">
+      <img src="<?php bloginfo('template_url'); ?>/assets/img/food-service-contacto-bottom.jpg" alt="" width="100%">
     </div>
   </div>
 </div>

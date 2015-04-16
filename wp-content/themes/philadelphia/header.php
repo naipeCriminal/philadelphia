@@ -55,6 +55,9 @@
   </head>
   <body>
     <div class="container" id="container-header">
+      <a href="?p=1043">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/quieroPhilly.png" alt="" id="quiero-philly">
+      </a>
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">

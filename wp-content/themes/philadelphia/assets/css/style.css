@@ -791,16 +791,32 @@ code {
 /*/////////////OFICIAL////////////*/
 
 .indexHome .seccion{
-  -webkit-background-size: cover;
-  background-size: cover;
+  overflow: hidden;
+  -webkit-background-size: 115%;
+  background-size: 115%;
   background-position: center center;
+  background-repeat: no-repeat;
 	height: 375px;
-	/*background: red;*/
+  -webkit-transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.indexHome .seccion:hover{
+  -webkit-background-size: 140%;
+  background-size: 140%;
+}
+.indexHome .seccion:hover .pleca{
+  transform: scale(1.1)
 }
 .indexHome .seccion{
   padding: 0px;
 }
 .indexHome .seccion .pleca{
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 	/*background: blue;*/
 	vertical-align: middle;
 	height: 100px;
@@ -1242,4 +1258,17 @@ button.close-chef {
   font-size: 37px;
   margin-bottom: 20px;
   color: rgb(0, 74, 128);
+}
+#quiero-philly{
+  position: fixed;
+  right: -167px;
+  top: 42px;
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 999;
+}
+#quiero-philly:hover{
+  right: 0;
 }
