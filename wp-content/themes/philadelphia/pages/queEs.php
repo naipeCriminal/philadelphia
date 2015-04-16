@@ -4,7 +4,7 @@
   </div>
   <div class="row queEs">
     <div class="col-xs-12 col-md-8 seccion text-center" style="background:#00adef;">
-      <h1 class="bemio">¿Qué es el <br><span class="bjack">centro gastronómico?</span></h1>
+      <h1 class="bemio">¿QUÉ ES<br><span class="bjack">centro gastronómico?</span></h1>
       <p class="text-left">En Mondelēz nos preocupamos por el crecimiento y la competitividad del mercado de Food Service. Es por eso que desarrollamos el Centro Gastronómico Mondelēz.</p>
       <p class="text-left">Nuestro Centro Gastronómico cuenta con un equipo profesional, dedicado a combinar sabores, colores, olores y texturas para lograr creaciones culinatias con Queso Crema Philadelphia.</p>
       <p class="text-left">Uno de nuestros objetivos principales es potencializar tu negocio; sin importar giro o tamaño, te apoyamos con la generación de ideas culinarias innovadoras basadas en las estaciones o tendencias, y te brindamos capacitación de procesos específicos durante todo el año.</p>

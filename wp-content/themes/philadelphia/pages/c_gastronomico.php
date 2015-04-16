@@ -10,7 +10,7 @@
 						<div class="table">
 							<div class="cell-center">
 								<h1 class="bemio">
-								<a href="?page_id=301">¿QUE ES EL <br><span class="bjack">centro gastronómico</span>?</a>
+								<a href="?page_id=301">¿QUÉ ES EL <br><span class="bjack">centro gastronómico</span>?</a>
 								</h1>
 							</div>
 						</div>
