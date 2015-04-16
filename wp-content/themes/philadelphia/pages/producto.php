@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-8 contenedor">
       <div class="seccion col-xs-12 col-md-6" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/producto-8kg.png')">
-        <h2 class="bemio" style="color:#184981">PHILADELPHIA ORIGINAL 8 KG</h2>
+        <h2 class="bemio" style="color:#184981; font-size: 15px; text-align: center;">PHILADELPHIA ORIGINAL 8 KG</h2>
         <!-- <img src="imagen/.png" alt=""> -->
         <div class="pleca" style="background:#194880;">
           <div style="display:table-row ">
