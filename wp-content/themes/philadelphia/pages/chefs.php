@@ -3,7 +3,7 @@
     <div class="col-md-12 text-center">
       <h1><span style="color: #1a477e; font-size: 35px;">Centro Gastronómico Mondeléz</span></h1>
     </div>
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-rodrigo.jpg'); background-size: cover; background-position: center center;">
+    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-rodrigo.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-bottom">
           <a href="#rodrigoZepeda" data-toggle="modal">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-karlaferrer.jpg'); background-size: cover; background-position: center center;">
+    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-karlaferrer.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-bottom">
           <a href="#karlaF" data-toggle="modal">
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-marcos.jpg');">
+    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-marcos.jpg');">
       <div class="table">
         <div class="cell-bottom">
           <a href="#marcosV" data-toggle="modal">
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-astrid.jpg'); background-size: cover; background-position: center center;">
+    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-astrid.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-bottom">
           <a href="#astridB" data-toggle="modal">

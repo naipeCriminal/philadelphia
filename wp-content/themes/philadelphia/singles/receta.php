@@ -13,28 +13,52 @@
         <button class="btn form-control btn-info text-right" id="btn-regresar-resultados">Regresar a Resultados</button>
       </div> -->
       <div class="col-xs-12 col-md-12 reset-padding">
-        <div id="container-caracteristicas">
+        <div id="container-caracteristicas" style="height: 100%;">
           <ul>
+          <?php 
+          if(types_render_field("tiempo-de-preparacion")!=""){ ?>
             <li>
-              <img src="../wp-content/themes/philadelphia/assets/img/recetas-tiempo.jpg" />
-              <p><?php echo( types_render_field("tiempo-de-horneado",array('row'=>true))); ?></p>
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/recetas-tiempo.jpg" />
+              <p><?php echo( types_render_field("tiempo-de-preparacion")); ?></p>
             </li>
+          <?php } ?>
+
+
+          <?php 
+          if(types_render_field("tiempo-de-horneado")!=""){ ?>
             <li>
-              <img src="../wp-content/themes/philadelphia/assets/img/recetas-tiempo-dehorneado.jpg" />
-              <p><?php echo( types_render_field("tiempo-de-preparacion",array('row'=>true))); ?></p>
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/recetas-tiempo-dehorneado.jpg" />
+              <p><?php echo( types_render_field("tiempo-de-horneado")); ?></p>
             </li>
+          <?php } ?>
+
+
+          <?php 
+          if(types_render_field("porciones")!=""){ ?>
             <li>
-              <img src="../wp-content/themes/philadelphia/assets/img/recetas-rinde.jpg" />
-              <p><?php echo( types_render_field("porciones",array('row'=>true))); ?></p>
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/recetas-rinde.jpg" />
+              <p><?php echo( types_render_field("porciones")); ?></p>
             </li>
+          <?php } ?>
+
+
+          <?php 
+          if(types_render_field("categoria")!=""){ ?>
             <li>
-              <img src="../wp-content/themes/philadelphia/assets/img/recetas-categoria.jpg" />
-              <p><?php echo( types_render_field("categoria",array('row'=>true))); ?></p>
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/recetas-categoria.jpg" />
+              <p><?php echo( types_render_field("categoria")); ?></p>
             </li>
+          <?php } ?>
+
+
+          <?php 
+          if(types_render_field("tiempo-de-refrigeracion")!=""){ ?>
             <li>
-              <img src="../wp-content/themes/philadelphia/assets/img/recetas-tiempo-refrigeracion.jpg" />
-              <p><?php echo( types_render_field("tiempo-de-refrigeracion",array('row'=>true))); ?></p>
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/recetas-tiempo-refrigeracion.jpg" />
+              <p><?php echo( types_render_field("tiempo-de-refrigeracion")); ?></p>
             </li>
+          <?php } ?>
+
           </ul>
 
         </div>
@@ -90,6 +114,7 @@
               </tr>
             </thead> -->
             <tbody>
+
             <?php
             $args = array(
                 'orderby' => 'orden-pasos'
@@ -97,6 +122,8 @@
              );
 
             $child_posts = types_child_posts('paso-receta',$args);
+
+            // $child_posts = types_child_posts('paso-receta');
             foreach ($child_posts as $child_post) {
             ?>
             <tr>
@@ -115,7 +142,9 @@
       <?php endwhile; else: endif; ?>
       <?php global $post; if( getCantTipsReceta($post->ID) > 0){ ?>
       <div class="col-xs-12 col-md-6 reset-padding">
-        <button class="btn form-control btn-info bjack btn-bjack" id="btn-ver-tips-receta">Ver tips de esta receta</button>
+        <a href="?p=1341">
+          <button class="btn form-control btn-info bjack btn-bjack" id="btn-ver-tips-receta">Ver tips de esta receta</button>
+        </a>
       </div>
       <?php } ?>
       <div class="col-xs-12 col-md-6 reset-padding">
