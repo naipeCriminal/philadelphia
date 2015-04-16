@@ -790,7 +790,8 @@ code {
 }
 /*/////////////OFICIAL////////////*/
 
-.indexHome .seccion{
+.indexHome .seccion,
+.square-recipe .thumbnail{
   overflow: hidden;
   -webkit-background-size: 115%;
   background-size: 115%;
@@ -802,7 +803,8 @@ code {
   -ms-transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.indexHome .seccion:hover{
+.indexHome .seccion:hover,
+.square-recipe .thumbnail:hover{
   -webkit-background-size: 140%;
   background-size: 140%;
 }

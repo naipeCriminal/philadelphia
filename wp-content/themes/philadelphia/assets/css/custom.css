@@ -80,3 +80,11 @@ select.form-control::-ms-expand {
   background-position: 99% center;
   background-repeat: no-repeat;
 }
+.square-recipe .thumbnail {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center center;
+  padding: 0;
+}
