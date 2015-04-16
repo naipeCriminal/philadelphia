@@ -1,3 +1,8 @@
+<style>
+  .form-group {
+  margin-bottom: 8px;
+}
+</style>
 <div class="col-md-12 text-center">
   <h1 class="bemio" style="color:#194782;">Food service: !Dale mas sabor a tu negocio!</h1>
 </div>
