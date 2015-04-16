@@ -85,13 +85,18 @@ function cr_display_form($fields = array(), $errors = null) {
 // Check for wp error obj and see if it has any errors
 if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
 // Display errors
-?><ul><?php
+?>
+<div class="safe-container">
+<div class="alert alert-danger">
+  <ul><?php
   foreach ($errors->get_error_messages() as $key => $val) {
   ?><li>
     <?php echo $val; ?>
   </li><?php
   }
-?></ul><?php
+?></ul>
+</div>
+</div><?php
 }
 // Disaply form
 ?>
