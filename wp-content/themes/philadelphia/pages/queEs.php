@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4 seccion reset-padding" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico-nuestroschefs.jpg');">
+    <div class="col-xs-12 col-md-4 seccion reset-padding" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico__nchefs.jpg');">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=299">

@@ -1,10 +1,9 @@
 jQuery.noConflict();
 /*
 pasteleria-y-cafeteria
-hoteles-y-restaurantes
+hoteles-y-restauranteso
 panaderia
 */
-
 jQuery(document).ready(function($) {
 
     // get the action filter option item on page load
@@ -21,6 +20,11 @@ jQuery(document).ready(function($) {
     // attempt to call Quicksand when a filter option
     // item is clicked
     $('.checkbox ').click(function(e) {
+        $(".checkbox").not(this).removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.input-checkbox').not(this).attr("checked", false);
+        $(this).find('.input-checkbox').attr("checked", true);
         // reset the active class on all the buttons
 
         // assign the class of the clicked filter option
@@ -32,21 +36,20 @@ jQuery(document).ready(function($) {
         if (jQueryfilterType == 'all') {
             // assign all li items to the jQueryfilteredData var when
             // the 'All' filter option is clicked
-            var jQueryfilteredData = jQuerydata.find('div');
+            var jQueryfilteredData = jQuerydata.find('div.square-recipe');
         } else {
             // find all div elements that have our required jQueryfilterType
             // values for the data-type element
 
-            var jQueryfilteredData = jQuerydata.find('div[data-type~=' + jQueryfilterType + ']');
+            var jQueryfilteredData = jQuerydata.find('div.square-recipe[data-type~=' + jQueryfilterType + ']');
         }
 
         // call quicksand and assign transition parameters
         jQueryholder.quicksand(jQueryfilteredData, {
             duration: 900,
+            adjustWidth: "auto",
             easing: 'easeInOutQuart'
         });
         return false;
     });
-
-
 });

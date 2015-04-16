@@ -752,6 +752,13 @@ code {
   font-size: 18px;
   margin: 0;
 }
+#filter-recipes h3 {
+  display: inline;
+  font-size: 14px;
+  position: relative;
+  top: -7px;
+  font-weight: bold;
+}
 .square-recipe{
   padding: 0;
   margin: 0;
@@ -759,6 +766,12 @@ code {
 .square-recipe .view{
   padding: 0;
   border: 0;
+}
+.square-recipe .view a{
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .square-recipe > .view > .thumbnail{
   width: 100%;
@@ -779,6 +792,9 @@ code {
   background-color: #194880;
   color: #fff;
   line-height: 20px;
+}
+.recipe-title h3{
+  margin: 0;
 }
 .tip-title{ background-color: #0098ff; }
 .tip-title a,
@@ -1264,7 +1280,7 @@ button.close-chef {
 #quiero-philly{
   position: fixed;
   right: -167px;
-  top: 42px;
+  top: 52px;
   -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   -moz-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   -ms-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1276,4 +1292,17 @@ button.close-chef {
 }
 .row.producto .seccion{
   box-shadow: inset 2px 3px 2px white;
+}
+#filter-recipes .checkbox{
+  cursor: pointer;
+  display: inline;
+  color: gray;
+}
+#filter-recipes .checkbox label{
+  position: relative;
+  margin-top: 7px;
+}
+#filter-recipes .checkbox.selected,
+#filter-recipes .checkbox:hover{
+  color: #004a80;
 }

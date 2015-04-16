@@ -13,7 +13,7 @@
         <form id="registro" role="form" data-toggle="validator">
           <div class="col-md-12 text-center" style="color: white;">
             <h1 class="bjack">¡Dinos lo que piensas!</h1>
-            <p style="color: white;">En Philadelphia Food Service nos interesamucho lo que nos quieras decir. <br>Envíanos tus comentarios y nos pondremos en contacto. </p>
+            <p style="color: white;">En Philadelphia Food Service nos interesa mucho lo que nos quieras decir. <br>Envíanos tus comentarios y nos pondremos en contacto. </p>
           </div>
           <div class="col-md-6">
             <div class="col-md-12" style="padding:0px">
