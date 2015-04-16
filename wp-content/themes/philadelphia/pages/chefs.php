@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4 seccion" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-quees.jpg'); background-size: cover; background-position: center center;">
+    <div class="col-xs-12 col-md-4 seccion" style="background: url('../wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-quees.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=301">
@@ -74,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4 seccion" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-ubicacion.jpg'); background-size: cover; background-position: center center;">
+    <div class="col-xs-12 col-md-4 seccion" style="background: url('../wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-ubicacion.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=304">
@@ -83,7 +83,7 @@
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-4 seccion" style="background: url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-noticias.jpg'); background-size: cover; background-position: center center;">
+    <div class="col-xs-12 col-md-4 seccion" style="background: url('../wp-content/themes/philadelphia/assets/img/centro_gastronomico-noticias.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
           <a href="?page_id=469">

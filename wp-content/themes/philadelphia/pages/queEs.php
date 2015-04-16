@@ -1,6 +1,6 @@
 <div class="safe-container">
   <div class="col-md-12 text-center">
-    <h1 class="bemio">CENTRO GASTRONÓMICO MONDELEZ</h1>
+    <h1 class="bemio"  style="color:#194782;">CENTRO GASTRONÓMICO MONDELEZ</h1>
   </div>
   <div class="row queEs">
     <div class="col-xs-12 col-md-8 seccion text-center" style="background:#00adef;">

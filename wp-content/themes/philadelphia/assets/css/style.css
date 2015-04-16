@@ -1272,3 +1272,6 @@ button.close-chef {
 #quiero-philly:hover{
   right: 0;
 }
+.row.producto .seccion{
+  box-shadow: inset 2px 3px 2px white;
+}
