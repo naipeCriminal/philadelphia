@@ -1,14 +1,16 @@
-<?php
-/*
-Template Name Posts: TipsDeLasRecetas
-*/
-?>
 <?php get_header(); ?> 
   <div class="container tipRecetaa">
     <div class="row">
-      <div class="col-md-4" style="padding:0px;"><button style="width:100%; padding:10px;">REGRESAR A TIPS</button></div>
-      <div class="col-md-4">RECETAS Y TIPS</div>
-      <div class="col-md-4" style="padding:0px;"><button style="width:100%; padding:10px;">REGRESAR A RESULTADOS DE PANADERIA</button></div>
+      <!-- crear clase para title container -->
+      <div class="title-container" style="margin-top:30px;">
+        <div class="col-md-4 reset-padding"><button class="btn form-control btn-default text-left">REGRESAR A TIPS</button></div>
+        <div class="col-md-4 text-center">
+            <h1 class="bemio" style="margin: 0; margin-bottom: 10px; color: rgb(1, 66, 130); ">RECETAS Y TIPS</h1>
+        </div>
+      </div>
+
+      <!-- <div class="col-md-4"></div> -->
+      <!-- <div class="col-md-4" style="padding:0px;"><button style="width:100%; padding:10px;">REGRESAR A RESULTADOS DE PANADERIA</button></div> -->
       <div class="col-md-12" style="background:#0097fe;  color: #fff;text-align: center;">
         <h2 class="bjack">Tip Philadelphia</h2>
         <h1><?php the_title(); ?></h1>
@@ -17,7 +19,7 @@ Template Name Posts: TipsDeLasRecetas
         <?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); {?>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-            <?php $i=0; $child_posts = types_child_posts('pasos-para-subir'); foreach ($child_posts as $child_post) { ?>
+            <?php $i=0; $child_posts = types_child_posts('paso-tip'); foreach ($child_posts as $child_post) { ?>
 
             <div style="background:url(<?php echo $child_post->fields['imagen-con-pasos'] ?>); width: 100%;height: 450px;background-size: cover; background-position: center center;" class="item <?php if($i==0){echo("active");$i=$i+1;} ?> " style="background:#000;padding-rig">
               <div class="row" style="padding:15px;background:#0097fe; margin-left: 0px;    border-right-style: none;border-left-style: none;border:#fff 3px solid;">

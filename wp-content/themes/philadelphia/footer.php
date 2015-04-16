@@ -54,7 +54,7 @@ fjs.parentNode.insertBefore(js, fjs);
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel" style="color:#eaca45; ">Políticas de Provacidad</h4>
+				<h4 class="modal-title" id="myModalLabel" style="color:#004a80; ">Políticas de Provacidad</h4>
 			</div>
 			<div class="modal-body"style="color:#262d36; ">
 				<p>Mondeléz de México, S. de R.L. de C.V., con domicilio en H. Congreso de la Unión No. 5840, Col. Tres Estrellas, Del. Gustavo A. Madero, C.P. 07820, México, D.F., es responsable de recabar sus datos personales, así como del uso, tratamiento y protección que se le dé a los mismos, de conformidad con la Ley de Protección de Datos Personales en Posesión de los Particulares (en adelante, la &quot;Ley&rdquo;)</p>
@@ -91,7 +91,7 @@ fjs.parentNode.insertBefore(js, fjs);
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel" style="color:#eaca45; ">Aviso Legal</h4>
+					<h4 class="modal-title" id="myModalLabel" style="color:#004a80; ">Aviso Legal</h4>
 				</div>
 				<div class="modal-body"style="color:#262d36; ">
 					<p>Este sitio Web es operado por Mondeléz México, S. de R.L. de C.V. con domicilio en H. Congreso de la Unión No. 5840, Col. Tres Estrellas, Del. Gustavo A. Madero, C.P. 07820, México, D.F. y se encuentra a su disposición para fines informativos. Al acceder o utilizar este Sitio, usted acepta estos Términos y Condiciones de Uso y nuestra Política de Privacidad. Si usted no acepta los Términos y Condiciones de Uso y la Política de Privacidad, usted no puede utilizar este Sitio.</p>
@@ -126,11 +126,10 @@ fjs.parentNode.insertBefore(js, fjs);
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel" style="color:#eaca45; ">Preguntas Frecuentes</h4>
+						<h4 class="modal-title" id="myModalLabel" style="color:#004a80; ">Preguntas Frecuentes</h4>
 					</div>
 					<div class="modal-body"style="color:#262d36; ">
-						aviso de privacidad
-						...
+						Preguntas Frecuentes.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
