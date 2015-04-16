@@ -7,7 +7,7 @@
 					<option value="2015">MONDELEZ EN EL MUNDO</option>
 				</select>
 			</li>
-			<li><a href="#">Contáctanos</a></li>
+			<li><a href="?page_id=390">Contáctanos</a></li>
 			<li><a href="#pregunta" role="button" data-toggle="modal">Preguntas frecuentes</a></li>
 			<li><a href="#politica" role="button" data-toggle="modal">Políticas de privacidad y términos de uso.</a></li>
 			<li><a href="#legal" role="button" data-toggle="modal">Aviso Legal</a></li>

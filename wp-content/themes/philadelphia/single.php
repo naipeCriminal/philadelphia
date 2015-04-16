@@ -17,6 +17,8 @@
     include("singles/noticia.php");
    }else if( $post->post_type == "receta" ){
     include("singles/receta.php");
+}else if( $post->post_type == "tip-philadelphia" ){
+    include("singles/tip.php");
   }else{
     include("singles/default.php");
   } 

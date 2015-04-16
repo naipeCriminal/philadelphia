@@ -16,7 +16,7 @@
     <div class="col-md-8 seccion" style="padding:0px;">
       <div class="col-md-8" id="map-canvas"></div>
     </div>
-    <div class="col-md-4 seccion sinPadding" style="background:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-quees.jpg');background-size: cover; background-position: center center;">
+    <div class="col-md-4 seccion sinPadding" style="background:url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-quees.jpg');background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
           <div class="pleca">
@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 seccion sinPadding" style="background:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-nuestroschefs.jpg');background-size: cover; background-position: center center;">
+    <div class="col-md-4 seccion sinPadding" style="background:url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico-nuestroschefs.jpg');background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
           <div class="pleca">
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 seccion sinPadding" style="background:url('wp-content/themes/philadelphia/assets/img/centro_gastronomico-noticias.jpg');background-size: cover; background-position: center center;">
+    <div class="col-md-4 seccion sinPadding" style="background:url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico-noticias.jpg');background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
           <div class="pleca">
