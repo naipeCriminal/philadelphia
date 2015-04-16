@@ -3,66 +3,62 @@
     <div class="col-md-12 text-center">
       <h1><span style="color: #1a477e; font-size: 35px;">Centro Gastronómico Mondeléz</span></h1>
     </div>
-
-    <a href="#karlaF" data-toggle="modal">
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-rodrigo.jpg'); background-size: cover; background-position: center center;">
-      <div class="table">
-        <div class="cell-bottom">
-          <a href="#rodrigoZepeda" data-toggle="modal">
+    <a href="#rodrigoZepeda" data-toggle="modal">
+      <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-rodrigo.jpg'); background-size: cover; background-position: center center;">
+        <div class="table">
+          <div class="cell-bottom">
             <div class="pleca">
               <div class="descripcionChef">
                 <h1>RODRIGO ZEPEDA</h1>
                 <h3>Corporative Chef</h3>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-  </a>
-
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-karlaferrer.jpg'); background-size: cover; background-position: center center;">
-      <div class="table">
-        <div class="cell-bottom">
-          <a href="#karlaF" data-toggle="modal">
+    </a>
+    <a href="#karlaF" data-toggle="modal">
+      <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-karlaferrer.jpg'); background-size: cover; background-position: center center;">
+        <div class="table">
+          <div class="cell-bottom">
             <div class="pleca">
               <div class="descripcionChef">
                 <h1>KARLA FERRER</h1>
                 <h3>Chef Jr.</h3>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-marcos.jpg');">
-      <div class="table">
-        <div class="cell-bottom">
-          <a href="#marcosV" data-toggle="modal">
+    </a>
+    <a href="#marcosV" data-toggle="modal">
+      <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-marcos.jpg');">
+        <div class="table">
+          <div class="cell-bottom">
             <div class="pleca">
               <div class="descripcionChef">
                 <h1>MARCOS VALADEZ</h1>
                 <h3>Chef Jr.</h3>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-astrid.jpg'); background-size: cover; background-position: center center;">
-      <div class="table">
-        <div class="cell-bottom">
-          <a href="#astridB" data-toggle="modal">
+    </a>
+    <a href="#astridB" data-toggle="modal">
+      <div class="col-xs-12 col-md-6 seccion chef-grid" style="background: url('<?php bloginfo('template_url'); ?>/assets/img/centro_gastronomico_chefs-astrid.jpg'); background-size: cover; background-position: center center;">
+        <div class="table">
+          <div class="cell-bottom">
             <div class="pleca">
               <div class="descripcionChef">
                 <h1>ASTRID BENÍTEZ</h1>
                 <h3>Chef Jr.</h3>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
     <div class="col-xs-12 col-md-4 seccion" style="background: url('../wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-quees.jpg'); background-size: cover; background-position: center center;">
       <div class="table">
         <div class="cell-center">
@@ -148,28 +144,26 @@
       <div class="modal-body chef-modal-content">
         <button type="button" class="close close-chef" data-dismiss="modal" aria-hidden="true">X</button>
         <div class="row">
-          <div class="col-md-1"></div>
-  
-            <div class="col-md-5">
-              <img src="../wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-karla.jpg" alt="">
-            </div>
-            <div class="col-md-5">
-              <h1 class="bemio">KARLA FERRER</h1>
-              <h3 class="bjack">Chef Jr.</h3>
-              <p>Con 9 años de experiencia, Karla es responsable de la plataforma digital de <b>Philadelphia Food Service</b> al estar a cargo de la elaboración de recetas nuevas, estandarización de las mismas, coordinación de clases de cocina, líder del call center que dá soluciones al consumifor, así como asesoría culinaria para los proyectos de marketing.</p>
-              <p></p>
-              <h2 class="bjack">Educación</h2>
-              <p>Licenciatura en Gastronomía en  el Colegio Superior de Gastronomía (Distrito Federal, México)</p>
-              <h2 class="bjack">Inicios</h2>
-              <p>Comenzó su trabajo en el Restaurante Bice Bistrod del Hotel Camino Real, creando y elaborando platillos de la carta, del área de desayunos y responsable de cocina fría.</p>
-              <h2 class="bjack">Logros Notables</h2>
-              <ul>
-                <li>Generación del contenido digital de recetas y clases de cocina de Philadelphia.</li>
-                <li>Con el apoyo de todo el equipo, posicionar la página de retail de Philadelphia como la #1 en FanPages de México.</li>
-              </ul>
-              <h2 class="bjack">Inspiración para el trabajo</h2>
-              <p>Karla cree que la cocina implica pasión en el trabajo y ganas de reinventar experiencias.</p>
-            </div>
+          <div class="col-md-6">
+            <img src="../wp-content/themes/philadelphia/assets/img/centro_gastronomico_chefs-karla.jpg" alt="">
+          </div>
+          <div class="col-md-5">
+            <h1 class="bemio">KARLA FERRER</h1>
+            <h3 class="bjack">Chef Jr.</h3>
+            <p>Con 9 años de experiencia, Karla es responsable de la plataforma digital de <b>Philadelphia Food Service</b> al estar a cargo de la elaboración de recetas nuevas, estandarización de las mismas, coordinación de clases de cocina, líder del call center que dá soluciones al consumifor, así como asesoría culinaria para los proyectos de marketing.</p>
+            <p></p>
+            <h2 class="bjack">Educación</h2>
+            <p>Licenciatura en Gastronomía en  el Colegio Superior de Gastronomía (Distrito Federal, México)</p>
+            <h2 class="bjack">Inicios</h2>
+            <p>Comenzó su trabajo en el Restaurante Bice Bistrod del Hotel Camino Real, creando y elaborando platillos de la carta, del área de desayunos y responsable de cocina fría.</p>
+            <h2 class="bjack">Logros Notables</h2>
+            <ul>
+              <li>Generación del contenido digital de recetas y clases de cocina de Philadelphia.</li>
+              <li>Con el apoyo de todo el equipo, posicionar la página de retail de Philadelphia como la #1 en FanPages de México.</li>
+            </ul>
+            <h2 class="bjack">Inspiración para el trabajo</h2>
+            <p>Karla cree que la cocina implica pasión en el trabajo y ganas de reinventar experiencias.</p>
+          </div>
           <div class="col-md-1"></div>
         </div>
       </div>
